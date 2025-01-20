@@ -3,6 +3,7 @@
     xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
   <modelVersion>4.0.0</modelVersion>
   <groupId>maniplib</groupId>
-  <artifactId>ManipLib-java</artifactId>
-  <version>2025.0.0-unreleased</version>
+  <artifactId>ManipLib-cpp</artifactId>
+  <version>test</version>
+  <packaging>pom</packaging>
 </project>

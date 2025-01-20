@@ -26,7 +26,7 @@ public class ManipSparkMax extends ManipMotor {
 
   public SparkClosedLoopController pid;
 
-  private SparkMaxConfig cfg = new SparkMaxConfig();
+  private final SparkMaxConfig cfg = new SparkMaxConfig();
 
   public ManipSparkMax(int canid, SparkLowLevel.MotorType motorType) {
     this.motor = new SparkMax(canid, motorType);

@@ -5,3 +5,4 @@ echo Publish
 call gradlew.bat publish
 echo Copy
 Xcopy /E /y .\\build\\repos\\releases\\maniplib .\\maniplib\\repos\\maniplib
+pause

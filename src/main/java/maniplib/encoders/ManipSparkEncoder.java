@@ -15,11 +15,11 @@ public class ManipSparkEncoder extends ManipEncoder {
   /** The {@link AbsoluteEncoder} representing the duty cycle encoder attached to the SparkMax. */
   public RelativeEncoder encoder;
   /** An {@link Alert} for if there is a failure configuring the encoder. */
-  private Alert failureConfiguring;
+  private final Alert failureConfiguring;
   /** An {@link Alert} for if there is a failure configuring the encoder offset. */
-  private Alert offsetFailure;
+  private final Alert offsetFailure;
 
-  private ManipMotor sparkMax;
+  private final ManipMotor sparkMax;
 
   /**
    * Create the {@link ManipSparkEncoder} object as a duty cycle from the {@link SparkMax} motor.

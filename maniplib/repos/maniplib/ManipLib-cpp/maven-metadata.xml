@@ -1,12 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <metadata>
   <groupId>maniplib</groupId>
-  <artifactId>ManipLib-java</artifactId>
+  <artifactId>ManipLib-cpp</artifactId>
   <versioning>
     <latest>test</latest>
     <release>test</release>
     <versions>
-      <version>2025.0.0-unreleased</version>
       <version>test</version>
     </versions>
     <lastUpdated>20250120044245</lastUpdated>
