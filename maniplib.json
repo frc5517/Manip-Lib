@@ -5,9 +5,9 @@
   "frcYear": "2025",
   "uuid": "67953b3f-32a5-41cf-84d7-2f6989d3d38d",
   "mavenUrls": [
-    "https://github.com/konnorreynolds/Manip-Lib/maniplib/repos"
+    "https://konnorreynolds.github.io/Manip-Lib/maniplib/repos"
   ],
-  "jsonUrl": "https://github.com/konnorreynolds/Manip-Lib/maniplib/maniplib.json",
+  "jsonUrl": "https://konnorreynolds.github.io/Manip-Lib/maniplib/maniplib.json",
   "javaDependencies": [
     {
       "groupId": "maniplib",
