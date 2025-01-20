@@ -159,7 +159,7 @@ publishing {
 
 model {
     publishing {
-        def taskList = createComponentZipTasks($.components, ['YAGSL'], zipBaseName, Zip, project, includeStandardZipFormat)
+        def taskList = createComponentZipTasks($.components, ['ManipLib'], zipBaseName, Zip, project, includeStandardZipFormat)
 
         publications {
             cpp(MavenPublication) {
