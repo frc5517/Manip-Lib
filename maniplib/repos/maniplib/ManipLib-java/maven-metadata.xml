@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <metadata>
-  <groupId>maniplib</groupId>
-  <artifactId>ManipLib-java</artifactId>
-  <versioning>
-    <latest>2025.0.0-unreleased</latest>
-    <release>2025.0.0-unreleased</release>
-    <versions>
-      <version>2025.0.0-unreleased</version>
-    </versions>
-    <lastUpdated>20250118060153</lastUpdated>
-  </versioning>
+    <groupId>maniplib</groupId>
+    <artifactId>ManipLib-java</artifactId>
+    <versioning>
+        <latest>2025.0.0-unreleased</latest>
+        <release>2025.0.0-unreleased</release>
+        <versions>
+            <version>2025.0.0-unreleased</version>
+        </versions>
+        <lastUpdated>20250118060153</lastUpdated>
+    </versioning>
 </metadata>

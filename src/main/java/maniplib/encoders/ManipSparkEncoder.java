@@ -1,9 +1,7 @@
 package maniplib.encoders;
 
 import com.revrobotics.AbsoluteEncoder;
-import com.revrobotics.REVLibError;
 import com.revrobotics.RelativeEncoder;
-import com.revrobotics.spark.SparkAbsoluteEncoder;
 import com.revrobotics.spark.SparkMax;
 import com.revrobotics.spark.config.SparkMaxConfig;
 import edu.wpi.first.wpilibj.Alert;
@@ -11,43 +9,28 @@ import edu.wpi.first.wpilibj.Alert.AlertType;
 import maniplib.motors.ManipMotor;
 import maniplib.motors.ManipSparkMax;
 
-import java.util.function.Supplier;
-
-/**
- * SparkMax absolute encoder, attached through the data port.
- */
+/** SparkMax absolute encoder, attached through the data port. */
 public class ManipSparkEncoder extends ManipEncoder {
 
-  /**
-   * The {@link AbsoluteEncoder} representing the duty cycle encoder attached to the SparkMax.
-   */
+  /** The {@link AbsoluteEncoder} representing the duty cycle encoder attached to the SparkMax. */
   public RelativeEncoder encoder;
-  /**
-   * An {@link Alert} for if there is a failure configuring the encoder.
-   */
+  /** An {@link Alert} for if there is a failure configuring the encoder. */
   private Alert failureConfiguring;
-  /**
-   * An {@link Alert} for if there is a failure configuring the encoder offset.
-   */
+  /** An {@link Alert} for if there is a failure configuring the encoder offset. */
   private Alert offsetFailure;
 
   private ManipMotor sparkMax;
 
   /**
-   * Create the {@link ManipSparkEncoder} object as a duty cycle from the {@link SparkMax}
-   * motor.
+   * Create the {@link ManipSparkEncoder} object as a duty cycle from the {@link SparkMax} motor.
    *
-   * @param motor            Motor to create the encoder from.
+   * @param motor Motor to create the encoder from.
    */
   public ManipSparkEncoder(ManipMotor motor) {
-    failureConfiguring = new Alert(
-            "Encoders",
-            "Failure configuring SparkMax Encoder",
-            AlertType.kWarning);
-    offsetFailure = new Alert(
-            "Encoders",
-            "Failure to set Absolute Encoder Offset",
-            AlertType.kWarning);
+    failureConfiguring =
+        new Alert("Encoders", "Failure configuring SparkMax Encoder", AlertType.kWarning);
+    offsetFailure =
+        new Alert("Encoders", "Failure to set Absolute Encoder Offset", AlertType.kWarning);
     if (motor.getMotor() instanceof SparkMax) {
       sparkMax = motor;
       encoder = ((SparkMax) motor.getMotor()).getEncoder();
@@ -57,17 +40,13 @@ public class ManipSparkEncoder extends ManipEncoder {
     }
   }
 
-  /**
-   * Reset the encoder to factory defaults.
-   */
+  /** Reset the encoder to factory defaults. */
   @Override
   public void factoryDefault() {
     // Do nothing
   }
 
-  /**
-   * Clear sticky faults on the encoder.
-   */
+  /** Clear sticky faults on the encoder. */
   @Override
   public void clearStickyFaults() {
     // Do nothing
@@ -105,16 +84,16 @@ public class ManipSparkEncoder extends ManipEncoder {
       SparkMaxConfig cfg = ((ManipSparkMax) sparkMax).getConfig();
       cfg.absoluteEncoder.zeroOffset(offset);
       ((ManipSparkMax) sparkMax).updateConfig(cfg);
-      return true;}
-//    } else if (sparkMax instanceof SparkMaxBrushedMotorSwerve)
-//    {
-//      SparkMaxConfig cfg = ((SparkMaxBrushedMotorSwerve) sparkMax).getConfig();
-//      cfg.absoluteEncoder.zeroOffset(offset);
-//      ((SparkMaxBrushedMotorSwerve) sparkMax).updateConfig(cfg);
-//      return true;
-//    }
-      return false;
-
+      return true;
+    }
+    //    } else if (sparkMax instanceof SparkMaxBrushedMotorSwerve)
+    //    {
+    //      SparkMaxConfig cfg = ((SparkMaxBrushedMotorSwerve) sparkMax).getConfig();
+    //      cfg.absoluteEncoder.zeroOffset(offset);
+    //      ((SparkMaxBrushedMotorSwerve) sparkMax).updateConfig(cfg);
+    //      return true;
+    //    }
+    return false;
   }
 
   /**
@@ -123,9 +102,7 @@ public class ManipSparkEncoder extends ManipEncoder {
    * @return velocity in degrees/sec.
    */
   @Override
-  public double getVelocity()
-  {
+  public double getVelocity() {
     return encoder.getVelocity();
   }
-
 }

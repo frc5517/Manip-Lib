@@ -1,6 +1,6 @@
 name: CI
 
-on: [push, pull_request]
+on: [ push, pull_request ]
 
 jobs:
   build-docker:
@@ -41,7 +41,7 @@ jobs:
           path: build/allOutputs
 
   build-host:
-    env: 
+    env:
       MACOSX_DEPLOYMENT_TARGET: 13.3
     strategy:
       fail-fast: false
