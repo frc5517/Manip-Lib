@@ -1,6 +1,4 @@
 maniplib
-maniplib.encoders
 maniplib.motors
-maniplib.telemetry
 maniplib.utils
 maniplib.utils.deserializer
