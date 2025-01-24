@@ -112,18 +112,6 @@ loadScripts(document, 'script');</script>
 <div class="col-first even-row-color"><code><a href="https://github.wpilib.org/allwpilib/docs/release/java/edu/wpi/first/wpilibj/DigitalInput.html" title="class or interface in edu.wpi.first.wpilibj" class="external-link">DigitalInput</a></code></div>
 <div class="col-second even-row-color"><code><a href="#bottomLimitSwitch" class="member-name-link">bottomLimitSwitch</a></code></div>
 <div class="col-last even-row-color">&nbsp;</div>
-<div class="col-first odd-row-color"><code><a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/Object.html" title="class or interface in java.lang" class="external-link">Object</a></code></div>
-<div class="col-second odd-row-color"><code><a href="#controller" class="member-name-link">controller</a></code></div>
-<div class="col-last odd-row-color">&nbsp;</div>
-<div class="col-first even-row-color"><code><a href="encoders/ManipEncoder.html" title="class in maniplib.encoders">ManipEncoder</a></code></div>
-<div class="col-second even-row-color"><code><a href="#encoder" class="member-name-link">encoder</a></code></div>
-<div class="col-last even-row-color">&nbsp;</div>
-<div class="col-first odd-row-color"><code>double</code></div>
-<div class="col-second odd-row-color"><code><a href="#maxAccel" class="member-name-link">maxAccel</a></code></div>
-<div class="col-last odd-row-color">&nbsp;</div>
-<div class="col-first even-row-color"><code>double</code></div>
-<div class="col-second even-row-color"><code><a href="#maxVelocity" class="member-name-link">maxVelocity</a></code></div>
-<div class="col-last even-row-color">&nbsp;</div>
 <div class="col-first odd-row-color"><code><a href="motors/ManipMotor.html" title="class in maniplib.motors">ManipMotor</a></code></div>
 <div class="col-second odd-row-color"><code><a href="#motor" class="member-name-link">motor</a></code></div>
 <div class="col-last odd-row-color">&nbsp;</div>
@@ -142,7 +130,9 @@ loadScripts(document, 'script');</script>
 <div class="table-header col-first">Constructor</div>
 <div class="table-header col-last">Description</div>
 <div class="col-constructor-name even-row-color"><code><a href="#%3Cinit%3E(maniplib.motors.ManipMotor)" class="member-name-link">ManipArm</a><wbr>(<a href="motors/ManipMotor.html" title="class in maniplib.motors">ManipMotor</a>&nbsp;motor)</code></div>
-<div class="col-last even-row-color">&nbsp;</div>
+<div class="col-last even-row-color">
+<div class="block">Initialize the <a href="ManipArm.html" title="class in maniplib"><code>ManipArm</code></a> to be used.</div>
+</div>
 </div>
 </section>
 </li>
@@ -158,24 +148,46 @@ loadScripts(document, 'script');</script>
 <div class="table-header col-second">Method</div>
 <div class="table-header col-last">Description</div>
 <div class="col-first even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code>void</code></div>
-<div class="col-second even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#limitSwitchFunction()" class="member-name-link">limitSwitchFunction</a>()</code></div>
-<div class="col-last even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4">&nbsp;</div>
+<div class="col-second even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#addFollower(maniplib.motors.ManipMotor,boolean)" class="member-name-link">addFollower</a><wbr>(<a href="motors/ManipMotor.html" title="class in maniplib.motors">ManipMotor</a>&nbsp;followerMotor,
+ boolean&nbsp;isInverted)</code></div>
+<div class="col-last even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4">
+<div class="block">Sets the <a href="motors/ManipMotor.html" title="class in maniplib.motors"><code>ManipMotor</code></a> to follow another <a href="motors/ManipMotor.html" title="class in maniplib.motors"><code>ManipMotor</code></a>.</div>
+</div>
 <div class="col-first odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code>void</code></div>
-<div class="col-second odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#setBottomLimitSwitch(edu.wpi.first.wpilibj.DigitalInput)" class="member-name-link">setBottomLimitSwitch</a><wbr>(<a href="https://github.wpilib.org/allwpilib/docs/release/java/edu/wpi/first/wpilibj/DigitalInput.html" title="class or interface in edu.wpi.first.wpilibj" class="external-link">DigitalInput</a>&nbsp;bottomLimitSwitch)</code></div>
-<div class="col-last odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4">&nbsp;</div>
-<div class="col-first even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="https://github.wpilib.org/allwpilib/docs/release/java/edu/wpi/first/wpilibj2/command/Command.html" title="class or interface in edu.wpi.first.wpilibj2.command" class="external-link">Command</a></code></div>
-<div class="col-second even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#setReference(double,com.revrobotics.spark.SparkBase.ControlType)" class="member-name-link">setReference</a><wbr>(double&nbsp;setpoint,
- <a href="https://codedocs.revrobotics.com/java/com/revrobotics/spark/SparkBase.ControlType.html" title="class or interface in com.revrobotics.spark" class="external-link">SparkBase.ControlType</a>&nbsp;controlType)</code></div>
-<div class="col-last even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4">&nbsp;</div>
-<div class="col-first odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="https://github.wpilib.org/allwpilib/docs/release/java/edu/wpi/first/wpilibj2/command/Command.html" title="class or interface in edu.wpi.first.wpilibj2.command" class="external-link">Command</a></code></div>
-<div class="col-second odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#setSpeed(double)" class="member-name-link">setSpeed</a><wbr>(double&nbsp;speed)</code></div>
-<div class="col-last odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4">&nbsp;</div>
+<div class="col-second odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#limitSwitchFunction()" class="member-name-link">limitSwitchFunction</a>()</code></div>
+<div class="col-last odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4">
+<div class="block">Function that sees if there's active limit switches then stops the <a href="ManipArm.html" title="class in maniplib"><code>ManipArm</code></a> if one is hit.</div>
+</div>
 <div class="col-first even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code>void</code></div>
-<div class="col-second even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#setTopLimitSwitch(edu.wpi.first.wpilibj.DigitalInput)" class="member-name-link">setTopLimitSwitch</a><wbr>(<a href="https://github.wpilib.org/allwpilib/docs/release/java/edu/wpi/first/wpilibj/DigitalInput.html" title="class or interface in edu.wpi.first.wpilibj" class="external-link">DigitalInput</a>&nbsp;topLimitSwitch)</code></div>
-<div class="col-last even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4">&nbsp;</div>
+<div class="col-second even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#setBottomLimitSwitch(edu.wpi.first.wpilibj.DigitalInput)" class="member-name-link">setBottomLimitSwitch</a><wbr>(<a href="https://github.wpilib.org/allwpilib/docs/release/java/edu/wpi/first/wpilibj/DigitalInput.html" title="class or interface in edu.wpi.first.wpilibj" class="external-link">DigitalInput</a>&nbsp;bottomLimitSwitch)</code></div>
+<div class="col-last even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4">
+<div class="block">Sets the bottomLimitSwitch <a href="https://github.wpilib.org/allwpilib/docs/release/java/edu/wpi/first/wpilibj/DigitalInput.html" title="class or interface in edu.wpi.first.wpilibj" class="external-link"><code>DigitalInput</code></a> for <a href="ManipArm.html" title="class in maniplib"><code>ManipArm</code></a>.</div>
+</div>
 <div class="col-first odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="https://github.wpilib.org/allwpilib/docs/release/java/edu/wpi/first/wpilibj2/command/Command.html" title="class or interface in edu.wpi.first.wpilibj2.command" class="external-link">Command</a></code></div>
-<div class="col-second odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#stopArm()" class="member-name-link">stopArm</a>()</code></div>
-<div class="col-last odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4">&nbsp;</div>
+<div class="col-second odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#setReference(double)" class="member-name-link">setReference</a><wbr>(double&nbsp;setpoint)</code></div>
+<div class="col-last odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4">
+<div class="block">A command that moves <a href="ManipArm.html" title="class in maniplib"><code>ManipArm</code></a> to setpoint.</div>
+</div>
+<div class="col-first even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="https://github.wpilib.org/allwpilib/docs/release/java/edu/wpi/first/wpilibj2/command/Command.html" title="class or interface in edu.wpi.first.wpilibj2.command" class="external-link">Command</a></code></div>
+<div class="col-second even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#setSpeed(double)" class="member-name-link">setSpeed</a><wbr>(double&nbsp;speed)</code></div>
+<div class="col-last even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4">
+<div class="block">A command that moves <a href="ManipArm.html" title="class in maniplib"><code>ManipArm</code></a> at speed.</div>
+</div>
+<div class="col-first odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code>void</code></div>
+<div class="col-second odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#setTopLimitSwitch(edu.wpi.first.wpilibj.DigitalInput)" class="member-name-link">setTopLimitSwitch</a><wbr>(<a href="https://github.wpilib.org/allwpilib/docs/release/java/edu/wpi/first/wpilibj/DigitalInput.html" title="class or interface in edu.wpi.first.wpilibj" class="external-link">DigitalInput</a>&nbsp;topLimitSwitch)</code></div>
+<div class="col-last odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4">
+<div class="block">Sets the topLimitSwitch <a href="https://github.wpilib.org/allwpilib/docs/release/java/edu/wpi/first/wpilibj/DigitalInput.html" title="class or interface in edu.wpi.first.wpilibj" class="external-link"><code>DigitalInput</code></a> for <a href="ManipArm.html" title="class in maniplib"><code>ManipArm</code></a>.</div>
+</div>
+<div class="col-first even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code>void</code></div>
+<div class="col-second even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#stopArm()" class="member-name-link">stopArm</a>()</code></div>
+<div class="col-last even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4">
+<div class="block">Stops the <a href="ManipArm.html" title="class in maniplib"><code>ManipArm</code></a></div>
+</div>
+<div class="col-first odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="https://github.wpilib.org/allwpilib/docs/release/java/edu/wpi/first/wpilibj2/command/Command.html" title="class or interface in edu.wpi.first.wpilibj2.command" class="external-link">Command</a></code></div>
+<div class="col-second odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#stopArmCommand()" class="member-name-link">stopArmCommand</a>()</code></div>
+<div class="col-last odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4">
+<div class="block">A command to stop the <a href="ManipArm.html" title="class in maniplib"><code>ManipArm</code></a></div>
+</div>
 </div>
 </div>
 </div>
@@ -206,18 +218,6 @@ loadScripts(document, 'script');</script>
 </section>
 </li>
 <li>
-<section class="detail" id="encoder">
-<h3>encoder</h3>
-<div class="member-signature"><span class="modifiers">public</span>&nbsp;<span class="return-type"><a href="encoders/ManipEncoder.html" title="class in maniplib.encoders">ManipEncoder</a></span>&nbsp;<span class="element-name">encoder</span></div>
-</section>
-</li>
-<li>
-<section class="detail" id="controller">
-<h3>controller</h3>
-<div class="member-signature"><span class="modifiers">public</span>&nbsp;<span class="return-type"><a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/Object.html" title="class or interface in java.lang" class="external-link">Object</a></span>&nbsp;<span class="element-name">controller</span></div>
-</section>
-</li>
-<li>
 <section class="detail" id="topLimitSwitch">
 <h3>topLimitSwitch</h3>
 <div class="member-signature"><span class="modifiers">public</span>&nbsp;<span class="return-type"><a href="https://github.wpilib.org/allwpilib/docs/release/java/edu/wpi/first/wpilibj/DigitalInput.html" title="class or interface in edu.wpi.first.wpilibj" class="external-link">DigitalInput</a></span>&nbsp;<span class="element-name">topLimitSwitch</span></div>
@@ -227,18 +227,6 @@ loadScripts(document, 'script');</script>
 <section class="detail" id="bottomLimitSwitch">
 <h3>bottomLimitSwitch</h3>
 <div class="member-signature"><span class="modifiers">public</span>&nbsp;<span class="return-type"><a href="https://github.wpilib.org/allwpilib/docs/release/java/edu/wpi/first/wpilibj/DigitalInput.html" title="class or interface in edu.wpi.first.wpilibj" class="external-link">DigitalInput</a></span>&nbsp;<span class="element-name">bottomLimitSwitch</span></div>
-</section>
-</li>
-<li>
-<section class="detail" id="maxVelocity">
-<h3>maxVelocity</h3>
-<div class="member-signature"><span class="modifiers">public</span>&nbsp;<span class="return-type">double</span>&nbsp;<span class="element-name">maxVelocity</span></div>
-</section>
-</li>
-<li>
-<section class="detail" id="maxAccel">
-<h3>maxAccel</h3>
-<div class="member-signature"><span class="modifiers">public</span>&nbsp;<span class="return-type">double</span>&nbsp;<span class="element-name">maxAccel</span></div>
 </section>
 </li>
 </ul>
@@ -253,6 +241,11 @@ loadScripts(document, 'script');</script>
 <section class="detail" id="&lt;init&gt;(maniplib.motors.ManipMotor)">
 <h3>ManipArm</h3>
 <div class="member-signature"><span class="modifiers">public</span>&nbsp;<span class="element-name">ManipArm</span><wbr><span class="parameters">(<a href="motors/ManipMotor.html" title="class in maniplib.motors">ManipMotor</a>&nbsp;motor)</span></div>
+<div class="block">Initialize the <a href="ManipArm.html" title="class in maniplib"><code>ManipArm</code></a> to be used.</div>
+<dl class="notes">
+<dt>Parameters:</dt>
+<dd><code>motor</code> - motor to set as the lead motor for this <a href="ManipArm.html" title="class in maniplib"><code>ManipArm</code></a></dd>
+</dl>
 </section>
 </li>
 </ul>
@@ -264,40 +257,89 @@ loadScripts(document, 'script');</script>
 <h2>Method Details</h2>
 <ul class="member-list">
 <li>
-<section class="detail" id="setSpeed(double)">
-<h3>setSpeed</h3>
-<div class="member-signature"><span class="modifiers">public</span>&nbsp;<span class="return-type"><a href="https://github.wpilib.org/allwpilib/docs/release/java/edu/wpi/first/wpilibj2/command/Command.html" title="class or interface in edu.wpi.first.wpilibj2.command" class="external-link">Command</a></span>&nbsp;<span class="element-name">setSpeed</span><wbr><span class="parameters">(double&nbsp;speed)</span></div>
+<section class="detail" id="addFollower(maniplib.motors.ManipMotor,boolean)">
+<h3>addFollower</h3>
+<div class="member-signature"><span class="modifiers">public</span>&nbsp;<span class="return-type">void</span>&nbsp;<span class="element-name">addFollower</span><wbr><span class="parameters">(<a href="motors/ManipMotor.html" title="class in maniplib.motors">ManipMotor</a>&nbsp;followerMotor,
+ boolean&nbsp;isInverted)</span></div>
+<div class="block">Sets the <a href="motors/ManipMotor.html" title="class in maniplib.motors"><code>ManipMotor</code></a> to follow another <a href="motors/ManipMotor.html" title="class in maniplib.motors"><code>ManipMotor</code></a>.</div>
+<dl class="notes">
+<dt>Parameters:</dt>
+<dd><code>followerMotor</code> - <a href="motors/ManipMotor.html" title="class in maniplib.motors"><code>ManipMotor</code></a> to follow the lead motor.</dd>
+<dd><code>isInverted</code> - whether to invert the follower or not.</dd>
+</dl>
 </section>
 </li>
 <li>
-<section class="detail" id="setReference(double,com.revrobotics.spark.SparkBase.ControlType)">
+<section class="detail" id="setSpeed(double)">
+<h3>setSpeed</h3>
+<div class="member-signature"><span class="modifiers">public</span>&nbsp;<span class="return-type"><a href="https://github.wpilib.org/allwpilib/docs/release/java/edu/wpi/first/wpilibj2/command/Command.html" title="class or interface in edu.wpi.first.wpilibj2.command" class="external-link">Command</a></span>&nbsp;<span class="element-name">setSpeed</span><wbr><span class="parameters">(double&nbsp;speed)</span></div>
+<div class="block">A command that moves <a href="ManipArm.html" title="class in maniplib"><code>ManipArm</code></a> at speed.</div>
+<dl class="notes">
+<dt>Parameters:</dt>
+<dd><code>speed</code> - percent to run <a href="ManipArm.html" title="class in maniplib"><code>ManipArm</code></a> at.</dd>
+<dt>Returns:</dt>
+<dd>a command that moves <a href="ManipArm.html" title="class in maniplib"><code>ManipArm</code></a> at speed.</dd>
+</dl>
+</section>
+</li>
+<li>
+<section class="detail" id="setReference(double)">
 <h3>setReference</h3>
-<div class="member-signature"><span class="modifiers">public</span>&nbsp;<span class="return-type"><a href="https://github.wpilib.org/allwpilib/docs/release/java/edu/wpi/first/wpilibj2/command/Command.html" title="class or interface in edu.wpi.first.wpilibj2.command" class="external-link">Command</a></span>&nbsp;<span class="element-name">setReference</span><wbr><span class="parameters">(double&nbsp;setpoint,
- <a href="https://codedocs.revrobotics.com/java/com/revrobotics/spark/SparkBase.ControlType.html" title="class or interface in com.revrobotics.spark" class="external-link">SparkBase.ControlType</a>&nbsp;controlType)</span></div>
+<div class="member-signature"><span class="modifiers">public</span>&nbsp;<span class="return-type"><a href="https://github.wpilib.org/allwpilib/docs/release/java/edu/wpi/first/wpilibj2/command/Command.html" title="class or interface in edu.wpi.first.wpilibj2.command" class="external-link">Command</a></span>&nbsp;<span class="element-name">setReference</span><wbr><span class="parameters">(double&nbsp;setpoint)</span></div>
+<div class="block">A command that moves <a href="ManipArm.html" title="class in maniplib"><code>ManipArm</code></a> to setpoint.</div>
+<dl class="notes">
+<dt>Parameters:</dt>
+<dd><code>setpoint</code> - value to move to</dd>
+<dt>Returns:</dt>
+<dd>a command that moves <a href="ManipArm.html" title="class in maniplib"><code>ManipArm</code></a> to setpoint.</dd>
+</dl>
 </section>
 </li>
 <li>
 <section class="detail" id="stopArm()">
 <h3>stopArm</h3>
-<div class="member-signature"><span class="modifiers">public</span>&nbsp;<span class="return-type"><a href="https://github.wpilib.org/allwpilib/docs/release/java/edu/wpi/first/wpilibj2/command/Command.html" title="class or interface in edu.wpi.first.wpilibj2.command" class="external-link">Command</a></span>&nbsp;<span class="element-name">stopArm</span>()</div>
+<div class="member-signature"><span class="modifiers">public</span>&nbsp;<span class="return-type">void</span>&nbsp;<span class="element-name">stopArm</span>()</div>
+<div class="block">Stops the <a href="ManipArm.html" title="class in maniplib"><code>ManipArm</code></a></div>
+</section>
+</li>
+<li>
+<section class="detail" id="stopArmCommand()">
+<h3>stopArmCommand</h3>
+<div class="member-signature"><span class="modifiers">public</span>&nbsp;<span class="return-type"><a href="https://github.wpilib.org/allwpilib/docs/release/java/edu/wpi/first/wpilibj2/command/Command.html" title="class or interface in edu.wpi.first.wpilibj2.command" class="external-link">Command</a></span>&nbsp;<span class="element-name">stopArmCommand</span>()</div>
+<div class="block">A command to stop the <a href="ManipArm.html" title="class in maniplib"><code>ManipArm</code></a></div>
+<dl class="notes">
+<dt>Returns:</dt>
+<dd>a command to stop the <a href="ManipArm.html" title="class in maniplib"><code>ManipArm</code></a>.</dd>
+</dl>
 </section>
 </li>
 <li>
 <section class="detail" id="setTopLimitSwitch(edu.wpi.first.wpilibj.DigitalInput)">
 <h3>setTopLimitSwitch</h3>
 <div class="member-signature"><span class="modifiers">public</span>&nbsp;<span class="return-type">void</span>&nbsp;<span class="element-name">setTopLimitSwitch</span><wbr><span class="parameters">(<a href="https://github.wpilib.org/allwpilib/docs/release/java/edu/wpi/first/wpilibj/DigitalInput.html" title="class or interface in edu.wpi.first.wpilibj" class="external-link">DigitalInput</a>&nbsp;topLimitSwitch)</span></div>
+<div class="block">Sets the topLimitSwitch <a href="https://github.wpilib.org/allwpilib/docs/release/java/edu/wpi/first/wpilibj/DigitalInput.html" title="class or interface in edu.wpi.first.wpilibj" class="external-link"><code>DigitalInput</code></a> for <a href="ManipArm.html" title="class in maniplib"><code>ManipArm</code></a>.</div>
+<dl class="notes">
+<dt>Parameters:</dt>
+<dd><code>topLimitSwitch</code> - top limit switch <a href="https://github.wpilib.org/allwpilib/docs/release/java/edu/wpi/first/wpilibj/DigitalInput.html" title="class or interface in edu.wpi.first.wpilibj" class="external-link"><code>DigitalInput</code></a>.</dd>
+</dl>
 </section>
 </li>
 <li>
 <section class="detail" id="setBottomLimitSwitch(edu.wpi.first.wpilibj.DigitalInput)">
 <h3>setBottomLimitSwitch</h3>
 <div class="member-signature"><span class="modifiers">public</span>&nbsp;<span class="return-type">void</span>&nbsp;<span class="element-name">setBottomLimitSwitch</span><wbr><span class="parameters">(<a href="https://github.wpilib.org/allwpilib/docs/release/java/edu/wpi/first/wpilibj/DigitalInput.html" title="class or interface in edu.wpi.first.wpilibj" class="external-link">DigitalInput</a>&nbsp;bottomLimitSwitch)</span></div>
+<div class="block">Sets the bottomLimitSwitch <a href="https://github.wpilib.org/allwpilib/docs/release/java/edu/wpi/first/wpilibj/DigitalInput.html" title="class or interface in edu.wpi.first.wpilibj" class="external-link"><code>DigitalInput</code></a> for <a href="ManipArm.html" title="class in maniplib"><code>ManipArm</code></a>.</div>
+<dl class="notes">
+<dt>Parameters:</dt>
+<dd><code>bottomLimitSwitch</code> - bottom limit switch <a href="https://github.wpilib.org/allwpilib/docs/release/java/edu/wpi/first/wpilibj/DigitalInput.html" title="class or interface in edu.wpi.first.wpilibj" class="external-link"><code>DigitalInput</code></a>.</dd>
+</dl>
 </section>
 </li>
 <li>
 <section class="detail" id="limitSwitchFunction()">
 <h3>limitSwitchFunction</h3>
 <div class="member-signature"><span class="modifiers">public</span>&nbsp;<span class="return-type">void</span>&nbsp;<span class="element-name">limitSwitchFunction</span>()</div>
+<div class="block">Function that sees if there's active limit switches then stops the <a href="ManipArm.html" title="class in maniplib"><code>ManipArm</code></a> if one is hit.</div>
 </section>
 </li>
 </ul>

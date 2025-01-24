@@ -1,1 +1,1 @@
-packageSearchIndex = [{"l":"All Packages","u":"allpackages-index.html"},{"l":"maniplib"},{"l":"maniplib.encoders"},{"l":"maniplib.motors"},{"l":"maniplib.telemetry"},{"l":"maniplib.utils"},{"l":"maniplib.utils.deserializer"}];updateSearchResults();
+packageSearchIndex = [{"l":"All Packages","u":"allpackages-index.html"},{"l":"maniplib"},{"l":"maniplib.motors"},{"l":"maniplib.utils"},{"l":"maniplib.utils.deserializer"}];updateSearchResults();
