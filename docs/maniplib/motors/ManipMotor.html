@@ -113,11 +113,6 @@ loadScripts(document, 'script');</script>
 <div class="col-last even-row-color">
 <div class="block">The maximum amount of times the swerve motor will attempt to configure a motor if failures occur.</div>
 </div>
-<div class="col-first odd-row-color"><code><a href="https://github.wpilib.org/allwpilib/docs/release/java/edu/wpi/first/math/system/plant/DCMotor.html" title="class or interface in edu.wpi.first.math.system.plant" class="external-link">DCMotor</a></code></div>
-<div class="col-second odd-row-color"><code><a href="#simMotor" class="member-name-link">simMotor</a></code></div>
-<div class="col-last odd-row-color">
-<div class="block">Sim motor to use, defaulted in <a href="#getSimMotor()"><code>getSimMotor()</code></a>, but can be overridden here.</div>
-</div>
 </div>
 </section>
 </li>
@@ -183,17 +178,17 @@ loadScripts(document, 'script');</script>
 </div>
 <div class="col-first odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code>abstract int</code></div>
 <div class="col-second odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code><a href="#getMotorID()" class="member-name-link">getMotorID</a>()</code></div>
-<div class="col-last odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3">&nbsp;</div>
+<div class="col-last odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3">
+<div class="block">Returns the canid of the motor.</div>
+</div>
 <div class="col-first even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code>abstract double</code></div>
 <div class="col-second even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code><a href="#getPosition()" class="member-name-link">getPosition</a>()</code></div>
 <div class="col-last even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3">
 <div class="block">Get the position of the integrated encoder.</div>
 </div>
-<div class="col-first odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code>abstract <a href="https://github.wpilib.org/allwpilib/docs/release/java/edu/wpi/first/math/system/plant/DCMotor.html" title="class or interface in edu.wpi.first.math.system.plant" class="external-link">DCMotor</a></code></div>
-<div class="col-second odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code><a href="#getSimMotor()" class="member-name-link">getSimMotor</a>()</code></div>
-<div class="col-last odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3">
-<div class="block">Get the <a href="https://github.wpilib.org/allwpilib/docs/release/java/edu/wpi/first/math/system/plant/DCMotor.html" title="class or interface in edu.wpi.first.math.system.plant" class="external-link"><code>DCMotor</code></a> of the motor class.</div>
-</div>
+<div class="col-first odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code>abstract <a href="https://github.wpilib.org/allwpilib/docs/release/java/edu/wpi/first/math/controller/ProfiledPIDController.html" title="class or interface in edu.wpi.first.math.controller" class="external-link">ProfiledPIDController</a></code></div>
+<div class="col-second odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code><a href="#getRioController()" class="member-name-link">getRioController</a>()</code></div>
+<div class="col-last odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3">&nbsp;</div>
 <div class="col-first even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code>abstract double</code></div>
 <div class="col-second even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code><a href="#getVelocity()" class="member-name-link">getVelocity</a>()</code></div>
 <div class="col-last even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3">
@@ -237,33 +232,34 @@ loadScripts(document, 'script');</script>
 <div class="block">Set the idle mode.</div>
 </div>
 <div class="col-first even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code>abstract void</code></div>
-<div class="col-second even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code><a href="#setPosition(double)" class="member-name-link">setPosition</a><wbr>(double&nbsp;position)</code></div>
+<div class="col-second even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code><a href="#setPIDControlType(maniplib.utils.PIDControlType.ControlType)" class="member-name-link">setPIDControlType</a><wbr>(<a href="../utils/PIDControlType.ControlType.html" title="enum class in maniplib.utils">PIDControlType.ControlType</a>&nbsp;controlType)</code></div>
 <div class="col-last even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3">
+<div class="block">Sets the <a href="../utils/PIDControlType.html" title="class in maniplib.utils"><code>PIDControlType</code></a> to use on the motor.</div>
+</div>
+<div class="col-first odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code>abstract void</code></div>
+<div class="col-second odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code><a href="#setPosition(double)" class="member-name-link">setPosition</a><wbr>(double&nbsp;position)</code></div>
+<div class="col-last odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3">
 <div class="block">Set the integrated encoder position.</div>
 </div>
-<div class="col-first odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code>abstract void</code></div>
-<div class="col-second odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code><a href="#setReference(double)" class="member-name-link">setReference</a><wbr>(double&nbsp;setpoint)</code></div>
-<div class="col-last odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3">
+<div class="col-first even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code>abstract void</code></div>
+<div class="col-second even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code><a href="#setReference(double)" class="member-name-link">setReference</a><wbr>(double&nbsp;setpoint)</code></div>
+<div class="col-last even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3">
 <div class="block">Set the closed loop PID controller reference point.</div>
 </div>
-<div class="col-first even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code>abstract void</code></div>
-<div class="col-second even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code><a href="#setReference(double,double)" class="member-name-link">setReference</a><wbr>(double&nbsp;setpoint,
+<div class="col-first odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code>abstract void</code></div>
+<div class="col-second odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code><a href="#setReference(double,double)" class="member-name-link">setReference</a><wbr>(double&nbsp;setpoint,
  double&nbsp;feedforward)</code></div>
-<div class="col-last even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3">
-<div class="block">Set the closed loop PID controller reference point.</div>
-</div>
-<div class="col-first odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code>abstract void</code></div>
-<div class="col-second odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code><a href="#setReference(double,double,com.revrobotics.spark.SparkBase.ControlType)" class="member-name-link">setReference</a><wbr>(double&nbsp;setpoint,
- double&nbsp;feedforward,
- <a href="https://codedocs.revrobotics.com/java/com/revrobotics/spark/SparkBase.ControlType.html" title="class or interface in com.revrobotics.spark" class="external-link">SparkBase.ControlType</a>&nbsp;controlType)</code></div>
 <div class="col-last odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3">
 <div class="block">Set the closed loop PID controller reference point.</div>
 </div>
 <div class="col-first even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code>abstract void</code></div>
-<div class="col-second even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code><a href="#setReference(double,com.revrobotics.spark.SparkBase.ControlType)" class="member-name-link">setReference</a><wbr>(double&nbsp;setpoint,
- <a href="https://codedocs.revrobotics.com/java/com/revrobotics/spark/SparkBase.ControlType.html" title="class or interface in com.revrobotics.spark" class="external-link">SparkBase.ControlType</a>&nbsp;controlType)</code></div>
+<div class="col-second even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code><a href="#setupRioPID(maniplib.utils.PIDFConfig,double,double,double,boolean)" class="member-name-link">setupRioPID</a><wbr>(<a href="../utils/PIDFConfig.html" title="class in maniplib.utils">PIDFConfig</a>&nbsp;pidfConfig,
+ double&nbsp;maxVelocity,
+ double&nbsp;maxAcceleration,
+ double&nbsp;tolerance,
+ boolean&nbsp;useRioPID)</code></div>
 <div class="col-last even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3">
-<div class="block">Set the closed loop PID controller reference point.</div>
+<div class="block">Sets up the <a href="ManipSparkMax.html" title="class in maniplib.motors"><code>ManipSparkMax</code></a> to use rioPID.</div>
 </div>
 <div class="col-first odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code>abstract void</code></div>
 <div class="col-second odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code><a href="#setVoltage(double)" class="member-name-link">setVoltage</a><wbr>(double&nbsp;voltage)</code></div>
@@ -271,19 +267,29 @@ loadScripts(document, 'script');</script>
 <div class="block">Set the voltage of the motor.</div>
 </div>
 <div class="col-first even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code>abstract void</code></div>
-<div class="col-second even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code><a href="#setVoltageCompensation(double)" class="member-name-link">setVoltageCompensation</a><wbr>(double&nbsp;nominalVoltage)</code></div>
+<div class="col-second even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code><a href="#setVoltage(edu.wpi.first.units.measure.Voltage)" class="member-name-link">setVoltage</a><wbr>(<a href="https://github.wpilib.org/allwpilib/docs/release/java/edu/wpi/first/units/measure/Voltage.html" title="class or interface in edu.wpi.first.units.measure" class="external-link">Voltage</a>&nbsp;voltage)</code></div>
 <div class="col-last even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3">
-<div class="block">Set the voltage compensation for the swerve module motor.</div>
+<div class="block">Set the voltage of the motor using <a href="https://github.wpilib.org/allwpilib/docs/release/java/edu/wpi/first/units/measure/Voltage.html" title="class or interface in edu.wpi.first.units.measure" class="external-link"><code>Voltage</code></a> units.</div>
 </div>
 <div class="col-first odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code>abstract void</code></div>
-<div class="col-second odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code><a href="#stopMotor()" class="member-name-link">stopMotor</a>()</code></div>
+<div class="col-second odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code><a href="#setVoltageCompensation(double)" class="member-name-link">setVoltageCompensation</a><wbr>(double&nbsp;nominalVoltage)</code></div>
 <div class="col-last odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3">
+<div class="block">Set the voltage compensation for the swerve module motor.</div>
+</div>
+<div class="col-first even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code>abstract void</code></div>
+<div class="col-second even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code><a href="#stopMotor()" class="member-name-link">stopMotor</a>()</code></div>
+<div class="col-last even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3">
 <div class="block">Stop the motor.</div>
 </div>
-<div class="col-first even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code>abstract <a href="https://github.wpilib.org/allwpilib/docs/release/java/edu/wpi/first/wpilibj2/command/Command.html" title="class or interface in edu.wpi.first.wpilibj2.command" class="external-link">Command</a></code></div>
-<div class="col-second even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code><a href="#stopMotorCommand()" class="member-name-link">stopMotorCommand</a>()</code></div>
-<div class="col-last even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3">
+<div class="col-first odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code>abstract <a href="https://github.wpilib.org/allwpilib/docs/release/java/edu/wpi/first/wpilibj2/command/Command.html" title="class or interface in edu.wpi.first.wpilibj2.command" class="external-link">Command</a></code></div>
+<div class="col-second odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code><a href="#stopMotorCommand()" class="member-name-link">stopMotorCommand</a>()</code></div>
+<div class="col-last odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3">
 <div class="block">A command to stop the motor.</div>
+</div>
+<div class="col-first even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code>abstract void</code></div>
+<div class="col-second even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code><a href="#useRioPID(boolean)" class="member-name-link">useRioPID</a><wbr>(boolean&nbsp;useRioPID)</code></div>
+<div class="col-last even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3">
+<div class="block">Whether to use rioPID or revPID</div>
 </div>
 </div>
 </div>
@@ -315,15 +321,6 @@ loadScripts(document, 'script');</script>
 </ul>
 </dd>
 </dl>
-</section>
-</li>
-<li>
-<section class="detail" id="simMotor">
-<h3>simMotor</h3>
-<div class="member-signature"><span class="modifiers">public</span>&nbsp;<span class="return-type"><a href="https://github.wpilib.org/allwpilib/docs/release/java/edu/wpi/first/math/system/plant/DCMotor.html" title="class or interface in edu.wpi.first.math.system.plant" class="external-link">DCMotor</a></span>&nbsp;<span class="element-name">simMotor</span></div>
-<div class="block">Sim motor to use, defaulted in <a href="#getSimMotor()"><code>getSimMotor()</code></a>, but can be overridden here. <br/> NOTE: This will
- not change the simulation motor type! It is intended for use only if you are utilizing Feedforwards from
- PathPlanner.</div>
 </section>
 </li>
 </ul>
@@ -360,6 +357,48 @@ loadScripts(document, 'script');</script>
 <h3>clearStickyFaults</h3>
 <div class="member-signature"><span class="modifiers">public abstract</span>&nbsp;<span class="return-type">void</span>&nbsp;<span class="element-name">clearStickyFaults</span>()</div>
 <div class="block">Clear the sticky faults on the motor controller.</div>
+</section>
+</li>
+<li>
+<section class="detail" id="setupRioPID(maniplib.utils.PIDFConfig,double,double,double,boolean)">
+<h3>setupRioPID</h3>
+<div class="member-signature"><span class="modifiers">public abstract</span>&nbsp;<span class="return-type">void</span>&nbsp;<span class="element-name">setupRioPID</span><wbr><span class="parameters">(<a href="../utils/PIDFConfig.html" title="class in maniplib.utils">PIDFConfig</a>&nbsp;pidfConfig,
+ double&nbsp;maxVelocity,
+ double&nbsp;maxAcceleration,
+ double&nbsp;tolerance,
+ boolean&nbsp;useRioPID)</span></div>
+<div class="block">Sets up the <a href="ManipSparkMax.html" title="class in maniplib.motors"><code>ManipSparkMax</code></a> to use rioPID.</div>
+<dl class="notes">
+<dt>Parameters:</dt>
+<dd><code>pidfConfig</code> - pid settings to use.</dd>
+<dd><code>maxVelocity</code> - maximum velocity for trapezoid profiling.</dd>
+<dd><code>maxAcceleration</code> - maximum acceleration for trapezoid profiling.</dd>
+<dd><code>useRioPID</code> - boolean to enable rioPID.</dd>
+</dl>
+</section>
+</li>
+<li>
+<section class="detail" id="useRioPID(boolean)">
+<h3>useRioPID</h3>
+<div class="member-signature"><span class="modifiers">public abstract</span>&nbsp;<span class="return-type">void</span>&nbsp;<span class="element-name">useRioPID</span><wbr><span class="parameters">(boolean&nbsp;useRioPID)</span></div>
+<div class="block">Whether to use rioPID or revPID</div>
+<dl class="notes">
+<dt>Parameters:</dt>
+<dd><code>useRioPID</code> - boolean to enable rioPID</dd>
+</dl>
+</section>
+</li>
+<li>
+<section class="detail" id="getRioController()">
+<h3>getRioController</h3>
+<div class="member-signature"><span class="modifiers">public abstract</span>&nbsp;<span class="return-type"><a href="https://github.wpilib.org/allwpilib/docs/release/java/edu/wpi/first/math/controller/ProfiledPIDController.html" title="class or interface in edu.wpi.first.math.controller" class="external-link">ProfiledPIDController</a></span>&nbsp;<span class="element-name">getRioController</span>()</div>
+</section>
+</li>
+<li>
+<section class="detail" id="setPIDControlType(maniplib.utils.PIDControlType.ControlType)">
+<h3>setPIDControlType</h3>
+<div class="member-signature"><span class="modifiers">public abstract</span>&nbsp;<span class="return-type">void</span>&nbsp;<span class="element-name">setPIDControlType</span><wbr><span class="parameters">(<a href="../utils/PIDControlType.ControlType.html" title="enum class in maniplib.utils">PIDControlType.ControlType</a>&nbsp;controlType)</span></div>
+<div class="block">Sets the <a href="../utils/PIDControlType.html" title="class in maniplib.utils"><code>PIDControlType</code></a> to use on the motor.</div>
 </section>
 </li>
 <li>
@@ -440,34 +479,6 @@ loadScripts(document, 'script');</script>
 </section>
 </li>
 <li>
-<section class="detail" id="setReference(double,double,com.revrobotics.spark.SparkBase.ControlType)">
-<h3>setReference</h3>
-<div class="member-signature"><span class="modifiers">public abstract</span>&nbsp;<span class="return-type">void</span>&nbsp;<span class="element-name">setReference</span><wbr><span class="parameters">(double&nbsp;setpoint,
- double&nbsp;feedforward,
- <a href="https://codedocs.revrobotics.com/java/com/revrobotics/spark/SparkBase.ControlType.html" title="class or interface in com.revrobotics.spark" class="external-link">SparkBase.ControlType</a>&nbsp;controlType)</span></div>
-<div class="block">Set the closed loop PID controller reference point.</div>
-<dl class="notes">
-<dt>Parameters:</dt>
-<dd><code>setpoint</code> - Setpoint, value type changes with ControlType.</dd>
-<dd><code>feedforward</code> - Feedforward in volt-meter-per-second or kV.</dd>
-<dd><code>controlType</code> - ControlType to run the setReference as.</dd>
-</dl>
-</section>
-</li>
-<li>
-<section class="detail" id="setReference(double,com.revrobotics.spark.SparkBase.ControlType)">
-<h3>setReference</h3>
-<div class="member-signature"><span class="modifiers">public abstract</span>&nbsp;<span class="return-type">void</span>&nbsp;<span class="element-name">setReference</span><wbr><span class="parameters">(double&nbsp;setpoint,
- <a href="https://codedocs.revrobotics.com/java/com/revrobotics/spark/SparkBase.ControlType.html" title="class or interface in com.revrobotics.spark" class="external-link">SparkBase.ControlType</a>&nbsp;controlType)</span></div>
-<div class="block">Set the closed loop PID controller reference point.</div>
-<dl class="notes">
-<dt>Parameters:</dt>
-<dd><code>setpoint</code> - Setpoint, value type changes with ControlType.</dd>
-<dd><code>controlType</code> - ControlType to run the setReference as.</dd>
-</dl>
-</section>
-</li>
-<li>
 <section class="detail" id="setReference(double,double)">
 <h3>setReference</h3>
 <div class="member-signature"><span class="modifiers">public abstract</span>&nbsp;<span class="return-type">void</span>&nbsp;<span class="element-name">setReference</span><wbr><span class="parameters">(double&nbsp;setpoint,
@@ -532,9 +543,25 @@ loadScripts(document, 'script');</script>
 </section>
 </li>
 <li>
+<section class="detail" id="setVoltage(edu.wpi.first.units.measure.Voltage)">
+<h3>setVoltage</h3>
+<div class="member-signature"><span class="modifiers">public abstract</span>&nbsp;<span class="return-type">void</span>&nbsp;<span class="element-name">setVoltage</span><wbr><span class="parameters">(<a href="https://github.wpilib.org/allwpilib/docs/release/java/edu/wpi/first/units/measure/Voltage.html" title="class or interface in edu.wpi.first.units.measure" class="external-link">Voltage</a>&nbsp;voltage)</span></div>
+<div class="block">Set the voltage of the motor using <a href="https://github.wpilib.org/allwpilib/docs/release/java/edu/wpi/first/units/measure/Voltage.html" title="class or interface in edu.wpi.first.units.measure" class="external-link"><code>Voltage</code></a> units.</div>
+<dl class="notes">
+<dt>Parameters:</dt>
+<dd><code>voltage</code> - units to set the motor with.</dd>
+</dl>
+</section>
+</li>
+<li>
 <section class="detail" id="getMotorID()">
 <h3>getMotorID</h3>
 <div class="member-signature"><span class="modifiers">public abstract</span>&nbsp;<span class="return-type">int</span>&nbsp;<span class="element-name">getMotorID</span>()</div>
+<div class="block">Returns the canid of the motor.</div>
+<dl class="notes">
+<dt>Returns:</dt>
+<dd>the canid of the motor.</dd>
+</dl>
 </section>
 </li>
 <li>
@@ -623,17 +650,6 @@ loadScripts(document, 'script');</script>
 <dl class="notes">
 <dt>Returns:</dt>
 <dd>Motor object.</dd>
-</dl>
-</section>
-</li>
-<li>
-<section class="detail" id="getSimMotor()">
-<h3>getSimMotor</h3>
-<div class="member-signature"><span class="modifiers">public abstract</span>&nbsp;<span class="return-type"><a href="https://github.wpilib.org/allwpilib/docs/release/java/edu/wpi/first/math/system/plant/DCMotor.html" title="class or interface in edu.wpi.first.math.system.plant" class="external-link">DCMotor</a></span>&nbsp;<span class="element-name">getSimMotor</span>()</div>
-<div class="block">Get the <a href="https://github.wpilib.org/allwpilib/docs/release/java/edu/wpi/first/math/system/plant/DCMotor.html" title="class or interface in edu.wpi.first.math.system.plant" class="external-link"><code>DCMotor</code></a> of the motor class.</div>
-<dl class="notes">
-<dt>Returns:</dt>
-<dd><a href="https://github.wpilib.org/allwpilib/docs/release/java/edu/wpi/first/math/system/plant/DCMotor.html" title="class or interface in edu.wpi.first.math.system.plant" class="external-link"><code>DCMotor</code></a> of this type.</dd>
 </dl>
 </section>
 </li>

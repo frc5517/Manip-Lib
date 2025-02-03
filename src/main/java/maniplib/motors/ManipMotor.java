@@ -1,8 +1,10 @@
 package maniplib.motors;
 
-import com.revrobotics.spark.SparkBase;
+import edu.wpi.first.math.controller.ProfiledPIDController;
 import edu.wpi.first.math.system.plant.DCMotor;
+import edu.wpi.first.units.measure.Voltage;
 import edu.wpi.first.wpilibj2.command.Command;
+import maniplib.utils.PIDControlType;
 import maniplib.utils.PIDFConfig;
 
 /**
@@ -10,16 +12,15 @@ import maniplib.utils.PIDFConfig;
  */
 public abstract class ManipMotor {
 
+    /*
+    Custom methods needed for each controller :
+    getSimMotor, custom simMotor code for each added motor support.
+     */
+
     /**
      * The maximum amount of times the swerve motor will attempt to configure a motor if failures occur.
      */
     public final int maximumRetries = 5;
-    /**
-     * Sim motor to use, defaulted in {@link ManipMotor#getSimMotor()}, but can be overridden here. <br/> NOTE: This will
-     * not change the simulation motor type! It is intended for use only if you are utilizing Feedforwards from
-     * PathPlanner.
-     */
-    public DCMotor simMotor;
 
     /**
      * Configure the factory defaults.
@@ -30,6 +31,30 @@ public abstract class ManipMotor {
      * Clear the sticky faults on the motor controller.
      */
     public abstract void clearStickyFaults();
+
+    /**
+     * Sets up the {@link ManipSparkMax} to use rioPID.
+     *
+     * @param pidfConfig      pid settings to use.
+     * @param maxVelocity     maximum velocity for trapezoid profiling.
+     * @param maxAcceleration maximum acceleration for trapezoid profiling.
+     * @param useRioPID       boolean to enable rioPID.
+     */
+    public abstract void setupRioPID(PIDFConfig pidfConfig, double maxVelocity, double maxAcceleration, double tolerance, boolean useRioPID);
+
+    /**
+     * Whether to use rioPID or revPID
+     *
+     * @param useRioPID boolean to enable rioPID
+     */
+    public abstract void useRioPID(boolean useRioPID);
+
+    public abstract ProfiledPIDController getRioController();
+
+    /**
+     * Sets the {@link PIDControlType} to use on the motor.
+     */
+    public abstract void setPIDControlType(PIDControlType.ControlType controlType);
 
     /**
      * Configure the PIDF values for the closed loop controller. 0 is disabled or off.
@@ -83,23 +108,6 @@ public abstract class ManipMotor {
     /**
      * Set the closed loop PID controller reference point.
      *
-     * @param setpoint    Setpoint, value type changes with ControlType.
-     * @param feedforward Feedforward in volt-meter-per-second or kV.
-     * @param controlType ControlType to run the setReference as.
-     */
-    public abstract void setReference(double setpoint, double feedforward, SparkBase.ControlType controlType);
-
-    /**
-     * Set the closed loop PID controller reference point.
-     *
-     * @param setpoint    Setpoint, value type changes with ControlType.
-     * @param controlType ControlType to run the setReference as.
-     */
-    public abstract void setReference(double setpoint, SparkBase.ControlType controlType);
-
-    /**
-     * Set the closed loop PID controller reference point.
-     *
      * @param setpoint    Setpoint in meters per second or angle in degrees.
      * @param feedforward Feedforward in volt-meter-per-second or kV.
      */
@@ -138,6 +146,18 @@ public abstract class ManipMotor {
      */
     public abstract void setVoltage(double voltage);
 
+    /**
+     * Set the voltage of the motor using {@link Voltage} units.
+     *
+     * @param voltage units to set the motor with.
+     */
+    public abstract void setVoltage(Voltage voltage);
+
+    /**
+     * Returns the canid of the motor.
+     *
+     * @return the canid of the motor.
+     */
     public abstract int getMotorID();
 
     /**
@@ -196,11 +216,4 @@ public abstract class ManipMotor {
      * @return Motor object.
      */
     public abstract Object getMotor();
-
-    /**
-     * Get the {@link DCMotor} of the motor class.
-     *
-     * @return {@link DCMotor} of this type.
-     */
-    public abstract DCMotor getSimMotor();
 }
