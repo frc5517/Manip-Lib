@@ -1,18 +1,18 @@
 {
-  "fileName": "maniplib-2025.0.0-beta0.json",
+  "fileName": "maniplib-2025.0.0-beta0.1.json",
   "name": "ManipLib",
-  "version": "2025.0.0-beta0",
+  "version": "2025.0.0-beta0.1",
   "frcYear": "2025",
   "uuid": "67953b3f-32a5-41cf-84d7-2f6989d3d38d",
   "mavenUrls": [
-    "https://konnorreynolds.github.io/Manip-Lib/maniplib/repos"
+    "https://frc5517.github.io/Manip-Lib/maniplib/repos"
   ],
-  "jsonUrl": "https://konnorreynolds.github.io/Manip-Lib/maniplib/maniplib.json",
+  "jsonUrl": "https://frc5517.github.io/Manip-Lib/maniplib/maniplib.json",
   "javaDependencies": [
     {
       "groupId": "maniplib",
       "artifactId": "ManipLib-java",
-      "version": "2025.0.0-beta0"
+      "version": "2025.0.0-beta0.1"
     }
   ],
   "requires": [
