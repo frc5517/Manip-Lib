@@ -334,6 +334,7 @@ public class ManipArm extends SubsystemBase {
 
     /**
      * Basic method to run the arm at commanded speed.
+     * This does not stop!!
      */
     public void runArmSpeed(double speed) {
         limitSwitchFunction();
@@ -342,6 +343,7 @@ public class ManipArm extends SubsystemBase {
 
     /**
      * Basic method to run the arm at commanded voltage.
+     * This does not stop!!
      */
     public void runArmVoltage(Voltage volts) {
         limitSwitchFunction();
@@ -383,16 +385,18 @@ public class ManipArm extends SubsystemBase {
 
     /**
      * Runs runArmSpeed as a {@link Command}.
+     * This stops after command is finished.
      */
     public Command runArmSpeedCommand(double speed) {
-        return run(() -> runArmSpeed(speed));
+        return runEnd(() -> runArmSpeed(speed), this::stopArmCommand);
     }
 
     /**
      * Runs runArmVoltage as a {@link Command}.
+     * This stops after command is finished.
      */
     public Command runArmVoltageCommand(Voltage volts) {
-        return run(() -> runArmVoltage(volts));
+        return runEnd(() -> runArmVoltage(volts), this::stopArmCommand);
     }
 
     /**
@@ -433,6 +437,10 @@ public class ManipArm extends SubsystemBase {
         if (topLimitHit != null) {
             if (motor.getAppliedOutput() > 0 && topLimitHit.getAsBoolean()) {
                 stopArm();
+
+                motor.setPosition(ManipMath.Arm.convertAngleToSensorUnits(
+                        armConstants.kArmReduction,
+                        armConstants.kMaxAngle).in(Rotations));
             } else {
                 Commands.none(); // Stop stopping the arm
             }
@@ -440,6 +448,10 @@ public class ManipArm extends SubsystemBase {
         if (bottomLimitHit != null) {
             if (motor.getAppliedOutput() < 0 && bottomLimitHit.getAsBoolean()) {
                 stopArm();
+
+                motor.setPosition(ManipMath.Arm.convertAngleToSensorUnits(
+                                armConstants.kArmReduction,
+                                armConstants.kMinAngle).in(Rotations));
             } else {
                 Commands.none(); // Stop stopping the arm
             }
@@ -475,5 +487,12 @@ public class ManipArm extends SubsystemBase {
      */
     public void stopArm() {
         motor.stopMotor();
+    }
+
+    /**
+     * Stops the arm.
+     */
+    public Command stopArmCommand() {
+        return motor.stopMotorCommand();
     }
 }
