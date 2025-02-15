@@ -1,7 +1,7 @@
 {
-  "fileName": "maniplib-2025.0.0-beta0.3.json",
+  "fileName": "maniplib-2025.0.0-beta0.4.json",
   "name": "ManipLib",
-  "version": "2025.0.0-beta0.3",
+  "version": "2025.0.0-beta0.4",
   "frcYear": "2025",
   "uuid": "67953b3f-32a5-41cf-84d7-2f6989d3d38d",
   "mavenUrls": [
@@ -12,7 +12,7 @@
     {
       "groupId": "maniplib",
       "artifactId": "ManipLib-java",
-      "version": "2025.0.0-beta0.3"
+      "version": "2025.0.0-beta0.4"
     }
   ],
   "requires": [
