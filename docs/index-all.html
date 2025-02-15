@@ -49,10 +49,14 @@ loadScripts(document, 'script');</script>
 <div class="header">
 <h1>Index</h1>
 </div>
-<a href="#I:A">A</a>&nbsp;<a href="#I:B">B</a>&nbsp;<a href="#I:C">C</a>&nbsp;<a href="#I:D">D</a>&nbsp;<a href="#I:E">E</a>&nbsp;<a href="#I:F">F</a>&nbsp;<a href="#I:G">G</a>&nbsp;<a href="#I:I">I</a>&nbsp;<a href="#I:K">K</a>&nbsp;<a href="#I:L">L</a>&nbsp;<a href="#I:M">M</a>&nbsp;<a href="#I:N">N</a>&nbsp;<a href="#I:O">O</a>&nbsp;<a href="#I:P">P</a>&nbsp;<a href="#I:R">R</a>&nbsp;<a href="#I:S">S</a>&nbsp;<a href="#I:T">T</a>&nbsp;<a href="#I:U">U</a>&nbsp;<a href="#I:V">V</a>&nbsp;<br><a href="allclasses-index.html">All&nbsp;Classes&nbsp;and&nbsp;Interfaces</a><span class="vertical-separator">|</span><a href="allpackages-index.html">All&nbsp;Packages</a><span class="vertical-separator">|</span><a href="constant-values.html">Constant&nbsp;Field&nbsp;Values</a>
+<a href="#I:A">A</a>&nbsp;<a href="#I:B">B</a>&nbsp;<a href="#I:C">C</a>&nbsp;<a href="#I:D">D</a>&nbsp;<a href="#I:E">E</a>&nbsp;<a href="#I:F">F</a>&nbsp;<a href="#I:G">G</a>&nbsp;<a href="#I:H">H</a>&nbsp;<a href="#I:I">I</a>&nbsp;<a href="#I:K">K</a>&nbsp;<a href="#I:L">L</a>&nbsp;<a href="#I:M">M</a>&nbsp;<a href="#I:N">N</a>&nbsp;<a href="#I:O">O</a>&nbsp;<a href="#I:P">P</a>&nbsp;<a href="#I:R">R</a>&nbsp;<a href="#I:S">S</a>&nbsp;<a href="#I:T">T</a>&nbsp;<a href="#I:U">U</a>&nbsp;<a href="#I:V">V</a>&nbsp;<br><a href="allclasses-index.html">All&nbsp;Classes&nbsp;and&nbsp;Interfaces</a><span class="vertical-separator">|</span><a href="allpackages-index.html">All&nbsp;Packages</a><span class="vertical-separator">|</span><a href="constant-values.html">Constant&nbsp;Field&nbsp;Values</a>
 <h2 class="title" id="I:A">A</h2>
 <dl class="index">
-<dt><a href="maniplib/ManipArm.html#addAbsoluteEncoder(com.revrobotics.AbsoluteEncoder)" class="member-name-link">addAbsoluteEncoder(AbsoluteEncoder)</a> - Method in class maniplib.<a href="maniplib/ManipArm.html" title="class in maniplib">ManipArm</a></dt>
+<dt><a href="maniplib/ManipArm.html#addAbsoluteEncoderValue(double)" class="member-name-link">addAbsoluteEncoderValue(double)</a> - Method in class maniplib.<a href="maniplib/ManipArm.html" title="class in maniplib">ManipArm</a></dt>
+<dd>
+<div class="block">Adds an absolute encoder to sync to on init.</div>
+</dd>
+<dt><a href="maniplib/ManipElevator.html#addAbsoluteEncoderValue(double)" class="member-name-link">addAbsoluteEncoderValue(double)</a> - Method in class maniplib.<a href="maniplib/ManipElevator.html" title="class in maniplib">ManipElevator</a></dt>
 <dd>
 <div class="block">Adds an absolute encoder to sync to on init.</div>
 </dd>
@@ -70,11 +74,21 @@ loadScripts(document, 'script');</script>
 </dd>
 <dt><a href="maniplib/utils/ManipMath.Arm.html#%3Cinit%3E()" class="member-name-link">Arm()</a> - Constructor for class maniplib.utils.<a href="maniplib/utils/ManipMath.Arm.html" title="class in maniplib.utils">ManipMath.Arm</a></dt>
 <dd>&nbsp;</dd>
+<dt><a href="maniplib/ManipElevator.html#atHeight(double,double)" class="member-name-link">atHeight(double, double)</a> - Method in class maniplib.<a href="maniplib/ManipElevator.html" title="class in maniplib">ManipElevator</a></dt>
+<dd>
+<div class="block">A trigger for when the height is at an acceptable tolerance.</div>
+</dd>
+<dt><a href="maniplib/ManipArm.html#autoStowWithOverride(double)" class="member-name-link">autoStowWithOverride(double)</a> - Method in class maniplib.<a href="maniplib/ManipArm.html" title="class in maniplib">ManipArm</a></dt>
+<dd>
+<div class="block">A command to be used as a default command to stow the arm.</div>
+</dd>
+<dt><a href="maniplib/ManipElevator.html#autoStowWithOverride(double)" class="member-name-link">autoStowWithOverride(double)</a> - Method in class maniplib.<a href="maniplib/ManipElevator.html" title="class in maniplib">ManipElevator</a></dt>
+<dd>
+<div class="block">A command to be used as a default command to stow the elevator.</div>
+</dd>
 </dl>
 <h2 class="title" id="I:B">B</h2>
 <dl class="index">
-<dt><a href="maniplib/ManipElevator.html#bottomLimitSwitch" class="member-name-link">bottomLimitSwitch</a> - Variable in class maniplib.<a href="maniplib/ManipElevator.html" title="class in maniplib">ManipElevator</a></dt>
-<dd>&nbsp;</dd>
 <dt><a href="maniplib/motors/ManipMotor.html#burnFlash()" class="member-name-link">burnFlash()</a> - Method in class maniplib.motors.<a href="maniplib/motors/ManipMotor.html" title="class in maniplib.motors">ManipMotor</a></dt>
 <dd>
 <div class="block">Save the configurations from flash to EEPROM.</div>
@@ -94,6 +108,12 @@ loadScripts(document, 'script');</script>
 <dd>
 <div class="block">Clear the sticky faults on the motor controller.</div>
 </dd>
+<dt><a href="maniplib/motors/ManipMotor.html#configureMotor(int,double,boolean,boolean)" class="member-name-link">configureMotor(int, double, boolean, boolean)</a> - Method in class maniplib.motors.<a href="maniplib/motors/ManipMotor.html" title="class in maniplib.motors">ManipMotor</a></dt>
+<dd>
+<div class="block">Used to internally set motor constants.</div>
+</dd>
+<dt><a href="maniplib/motors/ManipSparkMax.html#configureMotor(int,double,boolean,boolean)" class="member-name-link">configureMotor(int, double, boolean, boolean)</a> - Method in class maniplib.motors.<a href="maniplib/motors/ManipSparkMax.html" title="class in maniplib.motors">ManipSparkMax</a></dt>
+<dd>&nbsp;</dd>
 <dt><a href="maniplib/motors/ManipMotor.html#configurePIDF(maniplib.utils.PIDFConfig)" class="member-name-link">configurePIDF(PIDFConfig)</a> - Method in class maniplib.motors.<a href="maniplib/motors/ManipMotor.html" title="class in maniplib.motors">ManipMotor</a></dt>
 <dd>
 <div class="block">Configure the PIDF values for the closed loop controller.</div>
@@ -116,6 +136,14 @@ loadScripts(document, 'script');</script>
 <dd>
 <div class="block">Convert <a href="https://github.wpilib.org/allwpilib/docs/release/java/edu/wpi/first/units/measure/Angle.html" title="class or interface in edu.wpi.first.units.measure" class="external-link"><code>Angle</code></a> into motor <a href="https://github.wpilib.org/allwpilib/docs/release/java/edu/wpi/first/units/measure/Angle.html" title="class or interface in edu.wpi.first.units.measure" class="external-link"><code>Angle</code></a></div>
 </dd>
+<dt><a href="maniplib/utils/ManipMath.Elevator.html#convertDistanceToRotations(double,double,edu.wpi.first.units.measure.Distance)" class="member-name-link">convertDistanceToRotations(double, double, Distance)</a> - Static method in class maniplib.utils.<a href="maniplib/utils/ManipMath.Elevator.html" title="class in maniplib.utils">ManipMath.Elevator</a></dt>
+<dd>
+<div class="block">Convert <a href="https://github.wpilib.org/allwpilib/docs/release/java/edu/wpi/first/units/measure/Distance.html" title="class or interface in edu.wpi.first.units.measure" class="external-link"><code>Distance</code></a> into <a href="https://github.wpilib.org/allwpilib/docs/release/java/edu/wpi/first/units/measure/Angle.html" title="class or interface in edu.wpi.first.units.measure" class="external-link"><code>Angle</code></a></div>
+</dd>
+<dt><a href="maniplib/utils/ManipMath.Elevator.html#convertRotationsToDistance(double,double,edu.wpi.first.units.measure.Angle)" class="member-name-link">convertRotationsToDistance(double, double, Angle)</a> - Static method in class maniplib.utils.<a href="maniplib/utils/ManipMath.Elevator.html" title="class in maniplib.utils">ManipMath.Elevator</a></dt>
+<dd>
+<div class="block">Convert <a href="https://github.wpilib.org/allwpilib/docs/release/java/edu/wpi/first/units/measure/Angle.html" title="class or interface in edu.wpi.first.units.measure" class="external-link"><code>Angle</code></a> into <a href="https://github.wpilib.org/allwpilib/docs/release/java/edu/wpi/first/units/measure/Distance.html" title="class or interface in edu.wpi.first.units.measure" class="external-link"><code>Distance</code></a></div>
+</dd>
 <dt><a href="maniplib/utils/ManipMath.Arm.html#convertSensorUnitsToAngle(double,edu.wpi.first.units.measure.Angle)" class="member-name-link">convertSensorUnitsToAngle(double, Angle)</a> - Static method in class maniplib.utils.<a href="maniplib/utils/ManipMath.Arm.html" title="class in maniplib.utils">ManipMath.Arm</a></dt>
 <dd>
 <div class="block">Convert motor rotations <a href="https://github.wpilib.org/allwpilib/docs/release/java/edu/wpi/first/units/measure/Angle.html" title="class or interface in edu.wpi.first.units.measure" class="external-link"><code>Angle</code></a> into usable <a href="https://github.wpilib.org/allwpilib/docs/release/java/edu/wpi/first/units/measure/Angle.html" title="class or interface in edu.wpi.first.units.measure" class="external-link"><code>Angle</code></a></div>
@@ -134,17 +162,7 @@ loadScripts(document, 'script');</script>
 </dl>
 <h2 class="title" id="I:E">E</h2>
 <dl class="index">
-<dt><a href="maniplib/utils/ManipElevatorConfig.html#elevatorCarriageMass" class="member-name-link">elevatorCarriageMass</a> - Variable in class maniplib.utils.<a href="maniplib/utils/ManipElevatorConfig.html" title="class in maniplib.utils">ManipElevatorConfig</a></dt>
-<dd>&nbsp;</dd>
-<dt><a href="maniplib/utils/ManipElevatorConfig.html#elevatorDrumRadius" class="member-name-link">elevatorDrumRadius</a> - Variable in class maniplib.utils.<a href="maniplib/utils/ManipElevatorConfig.html" title="class in maniplib.utils">ManipElevatorConfig</a></dt>
-<dd>&nbsp;</dd>
-<dt><a href="maniplib/utils/ManipElevatorConfig.html#elevatorFeedforward" class="member-name-link">elevatorFeedforward</a> - Variable in class maniplib.utils.<a href="maniplib/utils/ManipElevatorConfig.html" title="class in maniplib.utils">ManipElevatorConfig</a></dt>
-<dd>&nbsp;</dd>
-<dt><a href="maniplib/utils/ManipElevatorConfig.html#elevatorGearing" class="member-name-link">elevatorGearing</a> - Variable in class maniplib.utils.<a href="maniplib/utils/ManipElevatorConfig.html" title="class in maniplib.utils">ManipElevatorConfig</a></dt>
-<dd>&nbsp;</dd>
-<dt><a href="maniplib/utils/ManipElevatorConfig.html#elevatorHeight" class="member-name-link">elevatorHeight</a> - Variable in class maniplib.utils.<a href="maniplib/utils/ManipElevatorConfig.html" title="class in maniplib.utils">ManipElevatorConfig</a></dt>
-<dd>&nbsp;</dd>
-<dt><a href="maniplib/utils/ManipElevatorConfig.html#elevatorWidth" class="member-name-link">elevatorWidth</a> - Variable in class maniplib.utils.<a href="maniplib/utils/ManipElevatorConfig.html" title="class in maniplib.utils">ManipElevatorConfig</a></dt>
+<dt><a href="maniplib/utils/ManipMath.Elevator.html#%3Cinit%3E()" class="member-name-link">Elevator()</a> - Constructor for class maniplib.utils.<a href="maniplib/utils/ManipMath.Elevator.html" title="class in maniplib.utils">ManipMath.Elevator</a></dt>
 <dd>&nbsp;</dd>
 <dt><a href="maniplib/motors/ManipSparkMax.html#encoder" class="member-name-link">encoder</a> - Variable in class maniplib.motors.<a href="maniplib/motors/ManipSparkMax.html" title="class in maniplib.motors">ManipSparkMax</a></dt>
 <dd>
@@ -170,6 +188,8 @@ loadScripts(document, 'script');</script>
 <dl class="index">
 <dt><a href="maniplib/utils/ManipArmConstants.html#gearbox" class="member-name-link">gearbox</a> - Variable in class maniplib.utils.<a href="maniplib/utils/ManipArmConstants.html" title="class in maniplib.utils">ManipArmConstants</a></dt>
 <dd>&nbsp;</dd>
+<dt><a href="maniplib/utils/ManipElevatorConstants.html#gearbox" class="member-name-link">gearbox</a> - Variable in class maniplib.utils.<a href="maniplib/utils/ManipElevatorConstants.html" title="class in maniplib.utils">ManipElevatorConstants</a></dt>
+<dd>&nbsp;</dd>
 <dt><a href="maniplib/ManipArm.html#getAngle()" class="member-name-link">getAngle()</a> - Method in class maniplib.<a href="maniplib/ManipArm.html" title="class in maniplib">ManipArm</a></dt>
 <dd>
 <div class="block">Get the Angle of the Arm.</div>
@@ -186,6 +206,22 @@ loadScripts(document, 'script');</script>
 <dd>
 <div class="block">Get the current configuration of the <a href="https://codedocs.revrobotics.com/java/com/revrobotics/spark/SparkMax.html" title="class or interface in com.revrobotics.spark" class="external-link"><code>SparkMax</code></a></div>
 </dd>
+<dt><a href="maniplib/ManipElevator.html#getHeightMeters()" class="member-name-link">getHeightMeters()</a> - Method in class maniplib.<a href="maniplib/ManipElevator.html" title="class in maniplib">ManipElevator</a></dt>
+<dd>
+<div class="block">Get the height in meters.</div>
+</dd>
+<dt><a href="maniplib/ManipElevator.html#getLinearPosition()" class="member-name-link">getLinearPosition()</a> - Method in class maniplib.<a href="maniplib/ManipElevator.html" title="class in maniplib">ManipElevator</a></dt>
+<dd>
+<div class="block">Get the height of the Elevator</div>
+</dd>
+<dt><a href="maniplib/ManipElevator.html#getLinearVelocity()" class="member-name-link">getLinearVelocity()</a> - Method in class maniplib.<a href="maniplib/ManipElevator.html" title="class in maniplib">ManipElevator</a></dt>
+<dd>
+<div class="block">Get Elevator Velocity</div>
+</dd>
+<dt><a href="maniplib/ManipArm.html#getMechAngle()" class="member-name-link">getMechAngle()</a> - Method in class maniplib.<a href="maniplib/ManipArm.html" title="class in maniplib">ManipArm</a></dt>
+<dd>&nbsp;</dd>
+<dt><a href="maniplib/ManipElevator.html#getMechLength()" class="member-name-link">getMechLength()</a> - Method in class maniplib.<a href="maniplib/ManipElevator.html" title="class in maniplib">ManipElevator</a></dt>
+<dd>&nbsp;</dd>
 <dt><a href="maniplib/motors/ManipMotor.html#getMotor()" class="member-name-link">getMotor()</a> - Method in class maniplib.motors.<a href="maniplib/motors/ManipMotor.html" title="class in maniplib.motors">ManipMotor</a></dt>
 <dd>
 <div class="block">Get the motor object from the module.</div>
@@ -232,6 +268,10 @@ loadScripts(document, 'script');</script>
 <dd>
 <div class="block">Get the velocity of the integrated encoder.</div>
 </dd>
+<dt><a href="maniplib/ManipElevator.html#getVelocityMetersPerSecond()" class="member-name-link">getVelocityMetersPerSecond()</a> - Method in class maniplib.<a href="maniplib/ManipElevator.html" title="class in maniplib">ManipElevator</a></dt>
+<dd>
+<div class="block">The velocity of the elevator in meters per second.</div>
+</dd>
 <dt><a href="maniplib/motors/ManipMotor.html#getVoltage()" class="member-name-link">getVoltage()</a> - Method in class maniplib.motors.<a href="maniplib/motors/ManipMotor.html" title="class in maniplib.motors">ManipMotor</a></dt>
 <dd>
 <div class="block">Get the voltage output of the motor controller.</div>
@@ -241,12 +281,29 @@ loadScripts(document, 'script');</script>
 <div class="block">Get the voltage output of the motor controller.</div>
 </dd>
 </dl>
+<h2 class="title" id="I:H">H</h2>
+<dl class="index">
+<dt><a href="maniplib/Telemetry.ManipTelemetry.html#HIGH" class="member-name-link">HIGH</a> - Enum constant in enum class maniplib.<a href="maniplib/Telemetry.ManipTelemetry.html" title="enum class in maniplib">Telemetry.ManipTelemetry</a></dt>
+<dd>&nbsp;</dd>
+</dl>
 <h2 class="title" id="I:I">I</h2>
 <dl class="index">
 <dt><a href="maniplib/utils/PIDFConfig.html#i" class="member-name-link">i</a> - Variable in class maniplib.utils.<a href="maniplib/utils/PIDFConfig.html" title="class in maniplib.utils">PIDFConfig</a></dt>
 <dd>
 <div class="block">Integral Gain for PID.</div>
 </dd>
+<dt><a href="maniplib/motors/ManipMotor.html#iterateCTRESim()" class="member-name-link">iterateCTRESim()</a> - Method in class maniplib.motors.<a href="maniplib/motors/ManipMotor.html" title="class in maniplib.motors">ManipMotor</a></dt>
+<dd>
+<div class="block">Not implemented, does nothing on Rev devices,</div>
+</dd>
+<dt><a href="maniplib/motors/ManipSparkMax.html#iterateCTRESim()" class="member-name-link">iterateCTRESim()</a> - Method in class maniplib.motors.<a href="maniplib/motors/ManipSparkMax.html" title="class in maniplib.motors">ManipSparkMax</a></dt>
+<dd>&nbsp;</dd>
+<dt><a href="maniplib/motors/ManipMotor.html#iterateRevSim(double,double,double)" class="member-name-link">iterateRevSim(double, double, double)</a> - Method in class maniplib.motors.<a href="maniplib/motors/ManipMotor.html" title="class in maniplib.motors">ManipMotor</a></dt>
+<dd>
+<div class="block">Iterates Rev's sim, does nothing on CTRE devices.</div>
+</dd>
+<dt><a href="maniplib/motors/ManipSparkMax.html#iterateRevSim(double,double,double)" class="member-name-link">iterateRevSim(double, double, double)</a> - Method in class maniplib.motors.<a href="maniplib/motors/ManipSparkMax.html" title="class in maniplib.motors">ManipSparkMax</a></dt>
+<dd>&nbsp;</dd>
 <dt><a href="maniplib/utils/PIDFConfig.html#iz" class="member-name-link">iz</a> - Variable in class maniplib.utils.<a href="maniplib/utils/PIDFConfig.html" title="class in maniplib.utils">PIDFConfig</a></dt>
 <dd>
 <div class="block">Integral zone of the PID.</div>
@@ -254,6 +311,8 @@ loadScripts(document, 'script');</script>
 </dl>
 <h2 class="title" id="I:K">K</h2>
 <dl class="index">
+<dt><a href="maniplib/utils/ManipElevatorConstants.html#kAbsEncoderOffset" class="member-name-link">kAbsEncoderOffset</a> - Variable in class maniplib.utils.<a href="maniplib/utils/ManipElevatorConstants.html" title="class in maniplib.utils">ManipElevatorConstants</a></dt>
+<dd>&nbsp;</dd>
 <dt><a href="maniplib/utils/ManipArmConstants.html#kArmAllowedClosedLoopError" class="member-name-link">kArmAllowedClosedLoopError</a> - Variable in class maniplib.utils.<a href="maniplib/utils/ManipArmConstants.html" title="class in maniplib.utils">ManipArmConstants</a></dt>
 <dd>&nbsp;</dd>
 <dt><a href="maniplib/utils/ManipArmConstants.html#kArmInverted" class="member-name-link">kArmInverted</a> - Variable in class maniplib.utils.<a href="maniplib/utils/ManipArmConstants.html" title="class in maniplib.utils">ManipArmConstants</a></dt>
@@ -290,11 +349,49 @@ loadScripts(document, 'script');</script>
 <dd>&nbsp;</dd>
 <dt><a href="maniplib/utils/ManipArmConstants.html#kArmStartingAngle" class="member-name-link">kArmStartingAngle</a> - Variable in class maniplib.utils.<a href="maniplib/utils/ManipArmConstants.html" title="class in maniplib.utils">ManipArmConstants</a></dt>
 <dd>&nbsp;</dd>
+<dt><a href="maniplib/utils/ManipElevatorConstants.html#kElevatorCarriageMass" class="member-name-link">kElevatorCarriageMass</a> - Variable in class maniplib.utils.<a href="maniplib/utils/ManipElevatorConstants.html" title="class in maniplib.utils">ManipElevatorConstants</a></dt>
+<dd>&nbsp;</dd>
+<dt><a href="maniplib/utils/ManipElevatorConstants.html#kElevatorCurrentLimit" class="member-name-link">kElevatorCurrentLimit</a> - Variable in class maniplib.utils.<a href="maniplib/utils/ManipElevatorConstants.html" title="class in maniplib.utils">ManipElevatorConstants</a></dt>
+<dd>&nbsp;</dd>
+<dt><a href="maniplib/utils/ManipElevatorConstants.html#kElevatorDrumRadius" class="member-name-link">kElevatorDrumRadius</a> - Variable in class maniplib.utils.<a href="maniplib/utils/ManipElevatorConstants.html" title="class in maniplib.utils">ManipElevatorConstants</a></dt>
+<dd>&nbsp;</dd>
+<dt><a href="maniplib/utils/ManipElevatorConstants.html#kElevatorGearing" class="member-name-link">kElevatorGearing</a> - Variable in class maniplib.utils.<a href="maniplib/utils/ManipElevatorConstants.html" title="class in maniplib.utils">ManipElevatorConstants</a></dt>
+<dd>&nbsp;</dd>
+<dt><a href="maniplib/utils/ManipElevatorConstants.html#kElevatorkA" class="member-name-link">kElevatorkA</a> - Variable in class maniplib.utils.<a href="maniplib/utils/ManipElevatorConstants.html" title="class in maniplib.utils">ManipElevatorConstants</a></dt>
+<dd>&nbsp;</dd>
+<dt><a href="maniplib/utils/ManipElevatorConstants.html#kElevatorKd" class="member-name-link">kElevatorKd</a> - Variable in class maniplib.utils.<a href="maniplib/utils/ManipElevatorConstants.html" title="class in maniplib.utils">ManipElevatorConstants</a></dt>
+<dd>&nbsp;</dd>
+<dt><a href="maniplib/utils/ManipElevatorConstants.html#kElevatorkG" class="member-name-link">kElevatorkG</a> - Variable in class maniplib.utils.<a href="maniplib/utils/ManipElevatorConstants.html" title="class in maniplib.utils">ManipElevatorConstants</a></dt>
+<dd>&nbsp;</dd>
+<dt><a href="maniplib/utils/ManipElevatorConstants.html#kElevatorKi" class="member-name-link">kElevatorKi</a> - Variable in class maniplib.utils.<a href="maniplib/utils/ManipElevatorConstants.html" title="class in maniplib.utils">ManipElevatorConstants</a></dt>
+<dd>&nbsp;</dd>
+<dt><a href="maniplib/utils/ManipElevatorConstants.html#kElevatorKp" class="member-name-link">kElevatorKp</a> - Variable in class maniplib.utils.<a href="maniplib/utils/ManipElevatorConstants.html" title="class in maniplib.utils">ManipElevatorConstants</a></dt>
+<dd>&nbsp;</dd>
+<dt><a href="maniplib/utils/ManipElevatorConstants.html#kElevatorkS" class="member-name-link">kElevatorkS</a> - Variable in class maniplib.utils.<a href="maniplib/utils/ManipElevatorConstants.html" title="class in maniplib.utils">ManipElevatorConstants</a></dt>
+<dd>&nbsp;</dd>
+<dt><a href="maniplib/utils/ManipElevatorConstants.html#kElevatorkV" class="member-name-link">kElevatorkV</a> - Variable in class maniplib.utils.<a href="maniplib/utils/ManipElevatorConstants.html" title="class in maniplib.utils">ManipElevatorConstants</a></dt>
+<dd>&nbsp;</dd>
+<dt><a href="maniplib/utils/ManipElevatorConstants.html#kElevatorRampRate" class="member-name-link">kElevatorRampRate</a> - Variable in class maniplib.utils.<a href="maniplib/utils/ManipElevatorConstants.html" title="class in maniplib.utils">ManipElevatorConstants</a></dt>
+<dd>&nbsp;</dd>
 <dt><a href="maniplib/utils/ManipArmConstants.html#kEnableAdvanced" class="member-name-link">kEnableAdvanced</a> - Variable in class maniplib.utils.<a href="maniplib/utils/ManipArmConstants.html" title="class in maniplib.utils">ManipArmConstants</a></dt>
+<dd>&nbsp;</dd>
+<dt><a href="maniplib/utils/ManipElevatorConstants.html#kEnableAdvanced" class="member-name-link">kEnableAdvanced</a> - Variable in class maniplib.utils.<a href="maniplib/utils/ManipElevatorConstants.html" title="class in maniplib.utils">ManipElevatorConstants</a></dt>
+<dd>&nbsp;</dd>
+<dt><a href="maniplib/utils/ManipElevatorConstants.html#kIsInverted" class="member-name-link">kIsInverted</a> - Variable in class maniplib.utils.<a href="maniplib/utils/ManipElevatorConstants.html" title="class in maniplib.utils">ManipElevatorConstants</a></dt>
+<dd>&nbsp;</dd>
+<dt><a href="maniplib/utils/ManipElevatorConstants.html#kMaxAcceleration" class="member-name-link">kMaxAcceleration</a> - Variable in class maniplib.utils.<a href="maniplib/utils/ManipElevatorConstants.html" title="class in maniplib.utils">ManipElevatorConstants</a></dt>
 <dd>&nbsp;</dd>
 <dt><a href="maniplib/utils/ManipArmConstants.html#kMaxAngle" class="member-name-link">kMaxAngle</a> - Variable in class maniplib.utils.<a href="maniplib/utils/ManipArmConstants.html" title="class in maniplib.utils">ManipArmConstants</a></dt>
 <dd>&nbsp;</dd>
+<dt><a href="maniplib/utils/ManipElevatorConstants.html#kMaxHeight" class="member-name-link">kMaxHeight</a> - Variable in class maniplib.utils.<a href="maniplib/utils/ManipElevatorConstants.html" title="class in maniplib.utils">ManipElevatorConstants</a></dt>
+<dd>&nbsp;</dd>
+<dt><a href="maniplib/utils/ManipElevatorConstants.html#kMaxVelocity" class="member-name-link">kMaxVelocity</a> - Variable in class maniplib.utils.<a href="maniplib/utils/ManipElevatorConstants.html" title="class in maniplib.utils">ManipElevatorConstants</a></dt>
+<dd>&nbsp;</dd>
 <dt><a href="maniplib/utils/ManipArmConstants.html#kMinAngle" class="member-name-link">kMinAngle</a> - Variable in class maniplib.utils.<a href="maniplib/utils/ManipArmConstants.html" title="class in maniplib.utils">ManipArmConstants</a></dt>
+<dd>&nbsp;</dd>
+<dt><a href="maniplib/utils/ManipElevatorConstants.html#kMinHeight" class="member-name-link">kMinHeight</a> - Variable in class maniplib.utils.<a href="maniplib/utils/ManipElevatorConstants.html" title="class in maniplib.utils">ManipElevatorConstants</a></dt>
+<dd>&nbsp;</dd>
+<dt><a href="maniplib/utils/ManipElevatorConstants.html#kStartingHeightSim" class="member-name-link">kStartingHeightSim</a> - Variable in class maniplib.utils.<a href="maniplib/utils/ManipElevatorConstants.html" title="class in maniplib.utils">ManipElevatorConstants</a></dt>
 <dd>&nbsp;</dd>
 </dl>
 <h2 class="title" id="I:L">L</h2>
@@ -307,6 +404,8 @@ loadScripts(document, 'script');</script>
 <dd>
 <div class="block">Function that sees if there's active limit switches then stops the <a href="maniplib/ManipElevator.html" title="class in maniplib"><code>ManipElevator</code></a> if one is hit.</div>
 </dd>
+<dt><a href="maniplib/Telemetry.ManipTelemetry.html#LOW" class="member-name-link">LOW</a> - Enum constant in enum class maniplib.<a href="maniplib/Telemetry.ManipTelemetry.html" title="enum class in maniplib">Telemetry.ManipTelemetry</a></dt>
+<dd>&nbsp;</dd>
 </dl>
 <h2 class="title" id="I:M">M</h2>
 <dl class="index">
@@ -326,18 +425,30 @@ loadScripts(document, 'script');</script>
 </dd>
 <dt><a href="maniplib/utils/ManipArmConstants.html" class="type-name-link" title="class in maniplib.utils">ManipArmConstants</a> - Class in <a href="maniplib/utils/package-summary.html">maniplib.utils</a></dt>
 <dd>&nbsp;</dd>
-<dt><a href="maniplib/utils/ManipArmConstants.html#%3Cinit%3E(edu.wpi.first.math.system.plant.DCMotor,double,double,double,double,double,double,double,double,double,double,double,double,boolean,double,double,int,double,double,double,double,boolean)" class="member-name-link">ManipArmConstants(DCMotor, double, double, double, double, double, double, double, double, double, double, double, double, boolean, double, double, int, double, double, double, double, boolean)</a> - Constructor for class maniplib.utils.<a href="maniplib/utils/ManipArmConstants.html" title="class in maniplib.utils">ManipArmConstants</a></dt>
-<dd>&nbsp;</dd>
+<dt><a href="maniplib/utils/ManipArmConstants.html#%3Cinit%3E(edu.wpi.first.math.system.plant.DCMotor,double,double,double,double,double,double,double,double,double,double,double,double,double,boolean,double,double,double,int,double,double,boolean)" class="member-name-link">ManipArmConstants(DCMotor, double, double, double, double, double, double, double, double, double, double, double, double, double, boolean, double, double, double, int, double, double, boolean)</a> - Constructor for class maniplib.utils.<a href="maniplib/utils/ManipArmConstants.html" title="class in maniplib.utils">ManipArmConstants</a></dt>
+<dd>
+<div class="block">Sets the constant values for <a href="maniplib/ManipArm.html" title="class in maniplib"><code>ManipArm</code></a>.</div>
+</dd>
 <dt><a href="maniplib/ManipElevator.html" class="type-name-link" title="class in maniplib">ManipElevator</a> - Class in <a href="maniplib/package-summary.html">maniplib</a></dt>
 <dd>&nbsp;</dd>
 <dt><a href="maniplib/ManipElevator.html#%3Cinit%3E(maniplib.motors.ManipMotor)" class="member-name-link">ManipElevator(ManipMotor)</a> - Constructor for class maniplib.<a href="maniplib/ManipElevator.html" title="class in maniplib">ManipElevator</a></dt>
 <dd>
-<div class="block">Initialize the <a href="maniplib/ManipElevator.html" title="class in maniplib"><code>ManipElevator</code></a> to be used.</div>
+<div class="block">Subsystem constructor, basic <a href="maniplib/ManipElevator.html" title="class in maniplib"><code>ManipElevator</code></a>.</div>
 </dd>
-<dt><a href="maniplib/utils/ManipElevatorConfig.html" class="type-name-link" title="class in maniplib.utils">ManipElevatorConfig</a> - Class in <a href="maniplib/utils/package-summary.html">maniplib.utils</a></dt>
+<dt><a href="maniplib/ManipElevator.html#%3Cinit%3E(maniplib.motors.ManipMotor,maniplib.utils.ManipElevatorConstants)" class="member-name-link">ManipElevator(ManipMotor, ManipElevatorConstants)</a> - Constructor for class maniplib.<a href="maniplib/ManipElevator.html" title="class in maniplib">ManipElevator</a></dt>
+<dd>
+<div class="block">Subsystem constructor, advanced <a href="maniplib/ManipElevator.html" title="class in maniplib"><code>ManipElevator</code></a> when config.kEnableAdvanced is set to true.</div>
+</dd>
+<dt><a href="maniplib/ManipElevator.html#%3Cinit%3E(maniplib.motors.ManipMotor,maniplib.utils.PIDFConfig)" class="member-name-link">ManipElevator(ManipMotor, PIDFConfig)</a> - Constructor for class maniplib.<a href="maniplib/ManipElevator.html" title="class in maniplib">ManipElevator</a></dt>
+<dd>
+<div class="block">Subsystem constructor, basic <a href="maniplib/ManipElevator.html" title="class in maniplib"><code>ManipElevator</code></a> with a <a href="maniplib/utils/PIDFConfig.html" title="class in maniplib.utils"><code>PIDFConfig</code></a>.</div>
+</dd>
+<dt><a href="maniplib/utils/ManipElevatorConstants.html" class="type-name-link" title="class in maniplib.utils">ManipElevatorConstants</a> - Class in <a href="maniplib/utils/package-summary.html">maniplib.utils</a></dt>
 <dd>&nbsp;</dd>
-<dt><a href="maniplib/utils/ManipElevatorConfig.html#%3Cinit%3E(edu.wpi.first.math.system.plant.DCMotor,edu.wpi.first.math.controller.ElevatorFeedforward,double,double,double,double,double,double,double)" class="member-name-link">ManipElevatorConfig(DCMotor, ElevatorFeedforward, double, double, double, double, double, double, double)</a> - Constructor for class maniplib.utils.<a href="maniplib/utils/ManipElevatorConfig.html" title="class in maniplib.utils">ManipElevatorConfig</a></dt>
-<dd>&nbsp;</dd>
+<dt><a href="maniplib/utils/ManipElevatorConstants.html#%3Cinit%3E(edu.wpi.first.math.system.plant.DCMotor,double,double,double,double,double,double,double,double,double,double,double,double,double,boolean,double,int,double,double,double,boolean)" class="member-name-link">ManipElevatorConstants(DCMotor, double, double, double, double, double, double, double, double, double, double, double, double, double, boolean, double, int, double, double, double, boolean)</a> - Constructor for class maniplib.utils.<a href="maniplib/utils/ManipElevatorConstants.html" title="class in maniplib.utils">ManipElevatorConstants</a></dt>
+<dd>
+<div class="block">Sets the constant values for <a href="maniplib/ManipElevator.html" title="class in maniplib"><code>ManipElevator</code></a>.</div>
+</dd>
 <dt><a href="maniplib/package-summary.html">maniplib</a> - package maniplib</dt>
 <dd>&nbsp;</dd>
 <dt><a href="maniplib/motors/package-summary.html">maniplib.motors</a> - package maniplib.motors</dt>
@@ -352,13 +463,13 @@ loadScripts(document, 'script');</script>
 <dd>&nbsp;</dd>
 <dt><a href="maniplib/utils/ManipMath.Arm.html" class="type-name-link" title="class in maniplib.utils">ManipMath.Arm</a> - Class in <a href="maniplib/utils/package-summary.html">maniplib.utils</a></dt>
 <dd>&nbsp;</dd>
+<dt><a href="maniplib/utils/ManipMath.Elevator.html" class="type-name-link" title="class in maniplib.utils">ManipMath.Elevator</a> - Class in <a href="maniplib/utils/package-summary.html">maniplib.utils</a></dt>
+<dd>&nbsp;</dd>
 <dt><a href="maniplib/motors/ManipMotor.html" class="type-name-link" title="class in maniplib.motors">ManipMotor</a> - Class in <a href="maniplib/motors/package-summary.html">maniplib.motors</a></dt>
 <dd>
 <div class="block">Swerve motor abstraction which defines a standard interface for motors within a swerve module.</div>
 </dd>
 <dt><a href="maniplib/motors/ManipMotor.html#%3Cinit%3E()" class="member-name-link">ManipMotor()</a> - Constructor for class maniplib.motors.<a href="maniplib/motors/ManipMotor.html" title="class in maniplib.motors">ManipMotor</a></dt>
-<dd>&nbsp;</dd>
-<dt><a href="maniplib/utils/ManipElevatorConfig.html#manipMotorType" class="member-name-link">manipMotorType</a> - Variable in class maniplib.utils.<a href="maniplib/utils/ManipElevatorConfig.html" title="class in maniplib.utils">ManipElevatorConfig</a></dt>
 <dd>&nbsp;</dd>
 <dt><a href="maniplib/ManipShooterIntake.html" class="type-name-link" title="class in maniplib">ManipShooterIntake</a> - Class in <a href="maniplib/package-summary.html">maniplib</a></dt>
 <dd>&nbsp;</dd>
@@ -378,12 +489,12 @@ loadScripts(document, 'script');</script>
 <dd>
 <div class="block">Initialize the manip motor.</div>
 </dd>
+<dt><a href="maniplib/Telemetry.html#manipVerbosity" class="member-name-link">manipVerbosity</a> - Static variable in class maniplib.<a href="maniplib/Telemetry.html" title="class in maniplib">Telemetry</a></dt>
+<dd>&nbsp;</dd>
 <dt><a href="maniplib/utils/deserializer/PIDFRange.html#max" class="member-name-link">max</a> - Variable in class maniplib.utils.deserializer.<a href="maniplib/utils/deserializer/PIDFRange.html" title="class in maniplib.utils.deserializer">PIDFRange</a></dt>
 <dd>
 <div class="block">Maximum value.</div>
 </dd>
-<dt><a href="maniplib/utils/ManipElevatorConfig.html#maxHeight" class="member-name-link">maxHeight</a> - Variable in class maniplib.utils.<a href="maniplib/utils/ManipElevatorConfig.html" title="class in maniplib.utils">ManipElevatorConfig</a></dt>
-<dd>&nbsp;</dd>
 <dt><a href="maniplib/motors/ManipMotor.html#maximumRetries" class="member-name-link">maximumRetries</a> - Variable in class maniplib.motors.<a href="maniplib/motors/ManipMotor.html" title="class in maniplib.motors">ManipMotor</a></dt>
 <dd>
 <div class="block">The maximum amount of times the swerve motor will attempt to configure a motor if failures occur.</div>
@@ -392,10 +503,6 @@ loadScripts(document, 'script');</script>
 <dd>
 <div class="block">Minimum value.</div>
 </dd>
-<dt><a href="maniplib/utils/ManipElevatorConfig.html#minHeight" class="member-name-link">minHeight</a> - Variable in class maniplib.utils.<a href="maniplib/utils/ManipElevatorConfig.html" title="class in maniplib.utils">ManipElevatorConfig</a></dt>
-<dd>&nbsp;</dd>
-<dt><a href="maniplib/ManipElevator.html#motor" class="member-name-link">motor</a> - Variable in class maniplib.<a href="maniplib/ManipElevator.html" title="class in maniplib">ManipElevator</a></dt>
-<dd>&nbsp;</dd>
 </dl>
 <h2 class="title" id="I:N">N</h2>
 <dl class="index">
@@ -403,20 +510,26 @@ loadScripts(document, 'script');</script>
 <dd>
 <div class="block">Near the maximum Angle of the arm within X degrees.</div>
 </dd>
+<dt><a href="maniplib/ManipElevator.html#nearMax(double)" class="member-name-link">nearMax(double)</a> - Method in class maniplib.<a href="maniplib/ManipElevator.html" title="class in maniplib">ManipElevator</a></dt>
+<dd>
+<div class="block">Near the maximum height of the elevator within X millimeters.</div>
+</dd>
 <dt><a href="maniplib/ManipArm.html#nearMin(double)" class="member-name-link">nearMin(double)</a> - Method in class maniplib.<a href="maniplib/ManipArm.html" title="class in maniplib">ManipArm</a></dt>
 <dd>
 <div class="block">Near the minimum angle of the Arm in within X degrees.</div>
 </dd>
+<dt><a href="maniplib/ManipElevator.html#nearMin(double)" class="member-name-link">nearMin(double)</a> - Method in class maniplib.<a href="maniplib/ManipElevator.html" title="class in maniplib">ManipElevator</a></dt>
+<dd>
+<div class="block">Near the minimum height of the elevator in within X millimeters.</div>
+</dd>
+<dt><a href="maniplib/Telemetry.ManipTelemetry.html#NONE" class="member-name-link">NONE</a> - Enum constant in enum class maniplib.<a href="maniplib/Telemetry.ManipTelemetry.html" title="enum class in maniplib">Telemetry.ManipTelemetry</a></dt>
+<dd>&nbsp;</dd>
 </dl>
 <h2 class="title" id="I:O">O</h2>
 <dl class="index">
 <dt><a href="maniplib/utils/PIDFConfig.html#output" class="member-name-link">output</a> - Variable in class maniplib.utils.<a href="maniplib/utils/PIDFConfig.html" title="class in maniplib.utils">PIDFConfig</a></dt>
 <dd>
 <div class="block">The PIDF output range.</div>
-</dd>
-<dt><a href="maniplib/ManipArm.html#overrideArmMech(edu.wpi.first.wpilibj.smartdashboard.Mechanism2d,edu.wpi.first.wpilibj.smartdashboard.MechanismRoot2d,edu.wpi.first.wpilibj.smartdashboard.MechanismLigament2d)" class="member-name-link">overrideArmMech(Mechanism2d, MechanismRoot2d, MechanismLigament2d)</a> - Method in class maniplib.<a href="maniplib/ManipArm.html" title="class in maniplib">ManipArm</a></dt>
-<dd>
-<div class="block">Set up an arm <a href="https://github.wpilib.org/allwpilib/docs/release/java/edu/wpi/first/wpilibj/smartdashboard/MechanismLigament2d.html" title="class or interface in edu.wpi.first.wpilibj.smartdashboard" class="external-link"><code>MechanismLigament2d</code></a> for simulation.</div>
 </dd>
 </dl>
 <h2 class="title" id="I:P">P</h2>
@@ -425,6 +538,10 @@ loadScripts(document, 'script');</script>
 <dd>
 <div class="block">Proportional Gain for PID.</div>
 </dd>
+<dt><a href="maniplib/ManipArm.html#periodic()" class="member-name-link">periodic()</a> - Method in class maniplib.<a href="maniplib/ManipArm.html" title="class in maniplib">ManipArm</a></dt>
+<dd>&nbsp;</dd>
+<dt><a href="maniplib/ManipElevator.html#periodic()" class="member-name-link">periodic()</a> - Method in class maniplib.<a href="maniplib/ManipElevator.html" title="class in maniplib">ManipElevator</a></dt>
+<dd>&nbsp;</dd>
 <dt><a href="maniplib/motors/ManipSparkMax.html#pid" class="member-name-link">pid</a> - Variable in class maniplib.motors.<a href="maniplib/motors/ManipSparkMax.html" title="class in maniplib.motors">ManipSparkMax</a></dt>
 <dd>
 <div class="block">Closed-loop PID controller.</div>
@@ -478,21 +595,53 @@ loadScripts(document, 'script');</script>
 <dd>
 <div class="block">Run the control loop to reach and maintain the setpoint from the preferences.</div>
 </dd>
+<dt><a href="maniplib/ManipElevator.html#reachSetpoint(double)" class="member-name-link">reachSetpoint(double)</a> - Method in class maniplib.<a href="maniplib/ManipElevator.html" title="class in maniplib">ManipElevator</a></dt>
+<dd>
+<div class="block">Run the control loop to reach and maintain the setpoint from the preferences.</div>
+</dd>
 <dt><a href="maniplib/motors/ManipSparkMax.html#rioPID" class="member-name-link">rioPID</a> - Variable in class maniplib.motors.<a href="maniplib/motors/ManipSparkMax.html" title="class in maniplib.motors">ManipSparkMax</a></dt>
 <dd>
 <div class="block">Rio Closed-Loop PID Controller</div>
 </dd>
-<dt><a href="maniplib/ManipArm.html#runArm(double)" class="member-name-link">runArm(double)</a> - Method in class maniplib.<a href="maniplib/ManipArm.html" title="class in maniplib">ManipArm</a></dt>
+<dt><a href="maniplib/ManipArm.html#runArmSpeed(double)" class="member-name-link">runArmSpeed(double)</a> - Method in class maniplib.<a href="maniplib/ManipArm.html" title="class in maniplib">ManipArm</a></dt>
 <dd>
 <div class="block">Basic method to run the arm at commanded speed.</div>
 </dd>
-<dt><a href="maniplib/ManipArm.html#runArmCommand(double)" class="member-name-link">runArmCommand(double)</a> - Method in class maniplib.<a href="maniplib/ManipArm.html" title="class in maniplib">ManipArm</a></dt>
+<dt><a href="maniplib/ManipArm.html#runArmSpeedCommand(double)" class="member-name-link">runArmSpeedCommand(double)</a> - Method in class maniplib.<a href="maniplib/ManipArm.html" title="class in maniplib">ManipArm</a></dt>
 <dd>
-<div class="block">Runs runArm as a <a href="https://github.wpilib.org/allwpilib/docs/release/java/edu/wpi/first/wpilibj2/command/Command.html" title="class or interface in edu.wpi.first.wpilibj2.command" class="external-link"><code>Command</code></a>.</div>
+<div class="block">Runs runArmSpeed as a <a href="https://github.wpilib.org/allwpilib/docs/release/java/edu/wpi/first/wpilibj2/command/Command.html" title="class or interface in edu.wpi.first.wpilibj2.command" class="external-link"><code>Command</code></a>.</div>
+</dd>
+<dt><a href="maniplib/ManipArm.html#runArmVoltage(edu.wpi.first.units.measure.Voltage)" class="member-name-link">runArmVoltage(Voltage)</a> - Method in class maniplib.<a href="maniplib/ManipArm.html" title="class in maniplib">ManipArm</a></dt>
+<dd>
+<div class="block">Basic method to run the arm at commanded voltage.</div>
+</dd>
+<dt><a href="maniplib/ManipArm.html#runArmVoltageCommand(edu.wpi.first.units.measure.Voltage)" class="member-name-link">runArmVoltageCommand(Voltage)</a> - Method in class maniplib.<a href="maniplib/ManipArm.html" title="class in maniplib">ManipArm</a></dt>
+<dd>
+<div class="block">Runs runArmVoltage as a <a href="https://github.wpilib.org/allwpilib/docs/release/java/edu/wpi/first/wpilibj2/command/Command.html" title="class or interface in edu.wpi.first.wpilibj2.command" class="external-link"><code>Command</code></a>.</div>
+</dd>
+<dt><a href="maniplib/ManipElevator.html#runElevatorSpeed(double)" class="member-name-link">runElevatorSpeed(double)</a> - Method in class maniplib.<a href="maniplib/ManipElevator.html" title="class in maniplib">ManipElevator</a></dt>
+<dd>
+<div class="block">Basic method to run the elevator at commanded speed.</div>
+</dd>
+<dt><a href="maniplib/ManipElevator.html#runElevatorSpeedCommand(double)" class="member-name-link">runElevatorSpeedCommand(double)</a> - Method in class maniplib.<a href="maniplib/ManipElevator.html" title="class in maniplib">ManipElevator</a></dt>
+<dd>
+<div class="block">Runs runElevatorSpeed as a <a href="https://github.wpilib.org/allwpilib/docs/release/java/edu/wpi/first/wpilibj2/command/Command.html" title="class or interface in edu.wpi.first.wpilibj2.command" class="external-link"><code>Command</code></a>.</div>
+</dd>
+<dt><a href="maniplib/ManipElevator.html#runElevatorVoltage(edu.wpi.first.units.measure.Voltage)" class="member-name-link">runElevatorVoltage(Voltage)</a> - Method in class maniplib.<a href="maniplib/ManipElevator.html" title="class in maniplib">ManipElevator</a></dt>
+<dd>
+<div class="block">Basic method to run the elevator at commanded voltage.</div>
+</dd>
+<dt><a href="maniplib/ManipElevator.html#runElevatorVoltageCommand(edu.wpi.first.units.measure.Voltage)" class="member-name-link">runElevatorVoltageCommand(Voltage)</a> - Method in class maniplib.<a href="maniplib/ManipElevator.html" title="class in maniplib">ManipElevator</a></dt>
+<dd>
+<div class="block">Runs runElevatorVoltage as a <a href="https://github.wpilib.org/allwpilib/docs/release/java/edu/wpi/first/wpilibj2/command/Command.html" title="class or interface in edu.wpi.first.wpilibj2.command" class="external-link"><code>Command</code></a>.</div>
 </dd>
 <dt><a href="maniplib/ManipArm.html#runSysIdRoutine()" class="member-name-link">runSysIdRoutine()</a> - Method in class maniplib.<a href="maniplib/ManipArm.html" title="class in maniplib">ManipArm</a></dt>
 <dd>
 <div class="block">Runs the SysId routine to tune the Arm</div>
+</dd>
+<dt><a href="maniplib/ManipElevator.html#runSysIdRoutine()" class="member-name-link">runSysIdRoutine()</a> - Method in class maniplib.<a href="maniplib/ManipElevator.html" title="class in maniplib">ManipElevator</a></dt>
+<dd>
+<div class="block">Runs the SysId routine to tune the elevator</div>
 </dd>
 </dl>
 <h2 class="title" id="I:S">S</h2>
@@ -513,13 +662,13 @@ loadScripts(document, 'script');</script>
 <dd>
 <div class="block">Sets the <a href="maniplib/motors/ManipSparkMax.html" title="class in maniplib.motors"><code>ManipSparkMax</code></a> to follow another <a href="maniplib/motors/ManipMotor.html" title="class in maniplib.motors"><code>ManipMotor</code></a>.</div>
 </dd>
-<dt><a href="maniplib/ManipElevator.html#setBottomLimitSwitch(edu.wpi.first.wpilibj.DigitalInput)" class="member-name-link">setBottomLimitSwitch(DigitalInput)</a> - Method in class maniplib.<a href="maniplib/ManipElevator.html" title="class in maniplib">ManipElevator</a></dt>
-<dd>
-<div class="block">Sets the bottomLimitSwitch <a href="https://github.wpilib.org/allwpilib/docs/release/java/edu/wpi/first/wpilibj/DigitalInput.html" title="class or interface in edu.wpi.first.wpilibj" class="external-link"><code>DigitalInput</code></a> for <a href="maniplib/ManipElevator.html" title="class in maniplib"><code>ManipElevator</code></a>.</div>
-</dd>
 <dt><a href="maniplib/ManipArm.html#setBottomLimitSwitch(edu.wpi.first.wpilibj2.command.button.Trigger)" class="member-name-link">setBottomLimitSwitch(Trigger)</a> - Method in class maniplib.<a href="maniplib/ManipArm.html" title="class in maniplib">ManipArm</a></dt>
 <dd>
 <div class="block">Sets the <a href="https://github.wpilib.org/allwpilib/docs/release/java/edu/wpi/first/wpilibj2/command/button/Trigger.html" title="class or interface in edu.wpi.first.wpilibj2.command.button" class="external-link"><code>Trigger</code></a> for when the bottom limit switch is hit for <a href="maniplib/ManipArm.html" title="class in maniplib"><code>ManipArm</code></a>.</div>
+</dd>
+<dt><a href="maniplib/ManipElevator.html#setBottomLimitSwitch(edu.wpi.first.wpilibj2.command.button.Trigger)" class="member-name-link">setBottomLimitSwitch(Trigger)</a> - Method in class maniplib.<a href="maniplib/ManipElevator.html" title="class in maniplib">ManipElevator</a></dt>
+<dd>
+<div class="block">Sets the <a href="https://github.wpilib.org/allwpilib/docs/release/java/edu/wpi/first/wpilibj2/command/button/Trigger.html" title="class or interface in edu.wpi.first.wpilibj2.command.button" class="external-link"><code>Trigger</code></a> for when the bottom limit switch is hit for <a href="maniplib/ManipElevator.html" title="class in maniplib"><code>ManipElevator</code></a>.</div>
 </dd>
 <dt><a href="maniplib/motors/ManipMotor.html#setCurrentLimit(int)" class="member-name-link">setCurrentLimit(int)</a> - Method in class maniplib.motors.<a href="maniplib/motors/ManipMotor.html" title="class in maniplib.motors">ManipMotor</a></dt>
 <dd>
@@ -531,7 +680,17 @@ loadScripts(document, 'script');</script>
 <div class="block">Set the current limit for the motor, remember this may cause jumping if used in conjunction with
  voltage compensation.</div>
 </dd>
+<dt><a href="maniplib/motors/ManipMotor.html#setGearbox(edu.wpi.first.math.system.plant.DCMotor)" class="member-name-link">setGearbox(DCMotor)</a> - Method in class maniplib.motors.<a href="maniplib/motors/ManipMotor.html" title="class in maniplib.motors">ManipMotor</a></dt>
+<dd>
+<div class="block">Used to pass the mechanism gearbox to the motor for sim.</div>
+</dd>
+<dt><a href="maniplib/motors/ManipSparkMax.html#setGearbox(edu.wpi.first.math.system.plant.DCMotor)" class="member-name-link">setGearbox(DCMotor)</a> - Method in class maniplib.motors.<a href="maniplib/motors/ManipSparkMax.html" title="class in maniplib.motors">ManipSparkMax</a></dt>
+<dd>&nbsp;</dd>
 <dt><a href="maniplib/ManipArm.html#setGoal(double)" class="member-name-link">setGoal(double)</a> - Method in class maniplib.<a href="maniplib/ManipArm.html" title="class in maniplib">ManipArm</a></dt>
+<dd>
+<div class="block">Runs reachSetpoint as a <a href="https://github.wpilib.org/allwpilib/docs/release/java/edu/wpi/first/wpilibj2/command/Command.html" title="class or interface in edu.wpi.first.wpilibj2.command" class="external-link"><code>Command</code></a>.</div>
+</dd>
+<dt><a href="maniplib/ManipElevator.html#setGoal(double)" class="member-name-link">setGoal(double)</a> - Method in class maniplib.<a href="maniplib/ManipElevator.html" title="class in maniplib">ManipElevator</a></dt>
 <dd>
 <div class="block">Runs reachSetpoint as a <a href="https://github.wpilib.org/allwpilib/docs/release/java/edu/wpi/first/wpilibj2/command/Command.html" title="class or interface in edu.wpi.first.wpilibj2.command" class="external-link"><code>Command</code></a>.</div>
 </dd>
@@ -573,10 +732,6 @@ loadScripts(document, 'script');</script>
 <dd>
 <div class="block">Set the integrated encoder position.</div>
 </dd>
-<dt><a href="maniplib/ManipElevator.html#setReference(double)" class="member-name-link">setReference(double)</a> - Method in class maniplib.<a href="maniplib/ManipElevator.html" title="class in maniplib">ManipElevator</a></dt>
-<dd>
-<div class="block">A command that moves <a href="maniplib/ManipElevator.html" title="class in maniplib"><code>ManipElevator</code></a> to setpoint.</div>
-</dd>
 <dt><a href="maniplib/ManipShooterIntake.html#setReference(double)" class="member-name-link">setReference(double)</a> - Method in class maniplib.<a href="maniplib/ManipShooterIntake.html" title="class in maniplib">ManipShooterIntake</a></dt>
 <dd>
 <div class="block">Set the closed loop PID controller reference point.</div>
@@ -597,10 +752,6 @@ loadScripts(document, 'script');</script>
 <dd>
 <div class="block">Set the closed loop PID controller reference point.</div>
 </dd>
-<dt><a href="maniplib/ManipElevator.html#setSpeed(double)" class="member-name-link">setSpeed(double)</a> - Method in class maniplib.<a href="maniplib/ManipElevator.html" title="class in maniplib">ManipElevator</a></dt>
-<dd>
-<div class="block">A command that moves <a href="maniplib/ManipElevator.html" title="class in maniplib"><code>ManipElevator</code></a> at speed.</div>
-</dd>
 <dt><a href="maniplib/ManipShooterIntake.html#setSpeed(double)" class="member-name-link">setSpeed(double)</a> - Method in class maniplib.<a href="maniplib/ManipShooterIntake.html" title="class in maniplib">ManipShooterIntake</a></dt>
 <dd>
 <div class="block">Set the percentage output.</div>
@@ -610,13 +761,18 @@ loadScripts(document, 'script');</script>
 <div class="block">Determines whether to sync the absolute encoder in the
  <a href="maniplib/ManipArm.html" title="class in maniplib"><code>ManipArm</code></a> class or not.</div>
 </dd>
-<dt><a href="maniplib/ManipElevator.html#setTopLimitSwitch(edu.wpi.first.wpilibj.DigitalInput)" class="member-name-link">setTopLimitSwitch(DigitalInput)</a> - Method in class maniplib.<a href="maniplib/ManipElevator.html" title="class in maniplib">ManipElevator</a></dt>
+<dt><a href="maniplib/ManipElevator.html#setSyncAbsEncoderInit(boolean)" class="member-name-link">setSyncAbsEncoderInit(boolean)</a> - Method in class maniplib.<a href="maniplib/ManipElevator.html" title="class in maniplib">ManipElevator</a></dt>
 <dd>
-<div class="block">Sets the topLimitSwitch <a href="https://github.wpilib.org/allwpilib/docs/release/java/edu/wpi/first/wpilibj/DigitalInput.html" title="class or interface in edu.wpi.first.wpilibj" class="external-link"><code>DigitalInput</code></a> for <a href="maniplib/ManipElevator.html" title="class in maniplib"><code>ManipElevator</code></a>.</div>
+<div class="block">Determines whether to sync the absolute encoder in the
+ <a href="maniplib/ManipElevator.html" title="class in maniplib"><code>ManipElevator</code></a> class or not.</div>
 </dd>
 <dt><a href="maniplib/ManipArm.html#setTopLimitSwitch(edu.wpi.first.wpilibj2.command.button.Trigger)" class="member-name-link">setTopLimitSwitch(Trigger)</a> - Method in class maniplib.<a href="maniplib/ManipArm.html" title="class in maniplib">ManipArm</a></dt>
 <dd>
 <div class="block">Sets the <a href="https://github.wpilib.org/allwpilib/docs/release/java/edu/wpi/first/wpilibj2/command/button/Trigger.html" title="class or interface in edu.wpi.first.wpilibj2.command.button" class="external-link"><code>Trigger</code></a> for when the top limit switch is hit for <a href="maniplib/ManipArm.html" title="class in maniplib"><code>ManipArm</code></a>.</div>
+</dd>
+<dt><a href="maniplib/ManipElevator.html#setTopLimitSwitch(edu.wpi.first.wpilibj2.command.button.Trigger)" class="member-name-link">setTopLimitSwitch(Trigger)</a> - Method in class maniplib.<a href="maniplib/ManipElevator.html" title="class in maniplib">ManipElevator</a></dt>
+<dd>
+<div class="block">Sets the <a href="https://github.wpilib.org/allwpilib/docs/release/java/edu/wpi/first/wpilibj2/command/button/Trigger.html" title="class or interface in edu.wpi.first.wpilibj2.command.button" class="external-link"><code>Trigger</code></a> for when the top limit switch is hit for <a href="maniplib/ManipElevator.html" title="class in maniplib"><code>ManipElevator</code></a>.</div>
 </dd>
 <dt><a href="maniplib/motors/ManipMotor.html#setupRioPID(maniplib.utils.PIDFConfig,double,double,double,boolean)" class="member-name-link">setupRioPID(PIDFConfig, double, double, double, boolean)</a> - Method in class maniplib.motors.<a href="maniplib/motors/ManipMotor.html" title="class in maniplib.motors">ManipMotor</a></dt>
 <dd>
@@ -626,6 +782,12 @@ loadScripts(document, 'script');</script>
 <dd>
 <div class="block">Sets up the <a href="maniplib/motors/ManipSparkMax.html" title="class in maniplib.motors"><code>ManipSparkMax</code></a> to use rioPID.</div>
 </dd>
+<dt><a href="maniplib/motors/ManipMotor.html#setVelocity(double)" class="member-name-link">setVelocity(double)</a> - Method in class maniplib.motors.<a href="maniplib/motors/ManipMotor.html" title="class in maniplib.motors">ManipMotor</a></dt>
+<dd>
+<div class="block">Set the integrated encoder velocity.</div>
+</dd>
+<dt><a href="maniplib/motors/ManipSparkMax.html#setVelocity(double)" class="member-name-link">setVelocity(double)</a> - Method in class maniplib.motors.<a href="maniplib/motors/ManipSparkMax.html" title="class in maniplib.motors">ManipSparkMax</a></dt>
+<dd>&nbsp;</dd>
 <dt><a href="maniplib/motors/ManipMotor.html#setVoltage(double)" class="member-name-link">setVoltage(double)</a> - Method in class maniplib.motors.<a href="maniplib/motors/ManipMotor.html" title="class in maniplib.motors">ManipMotor</a></dt>
 <dd>
 <div class="block">Set the voltage of the motor.</div>
@@ -651,18 +813,20 @@ loadScripts(document, 'script');</script>
 <div class="block">Set the voltage compensation for the motor.</div>
 </dd>
 <dt><a href="maniplib/ManipArm.html#simulationPeriodic()" class="member-name-link">simulationPeriodic()</a> - Method in class maniplib.<a href="maniplib/ManipArm.html" title="class in maniplib">ManipArm</a></dt>
-<dd>&nbsp;</dd>
+<dd>
+<div class="block">Ran periodically in simulation.</div>
+</dd>
+<dt><a href="maniplib/ManipElevator.html#simulationPeriodic()" class="member-name-link">simulationPeriodic()</a> - Method in class maniplib.<a href="maniplib/ManipElevator.html" title="class in maniplib">ManipElevator</a></dt>
+<dd>
+<div class="block">Ran periodically in simulation.</div>
+</dd>
 <dt><a href="maniplib/ManipArm.html#stopArm()" class="member-name-link">stopArm()</a> - Method in class maniplib.<a href="maniplib/ManipArm.html" title="class in maniplib">ManipArm</a></dt>
 <dd>
 <div class="block">Stops the arm.</div>
 </dd>
 <dt><a href="maniplib/ManipElevator.html#stopElevator()" class="member-name-link">stopElevator()</a> - Method in class maniplib.<a href="maniplib/ManipElevator.html" title="class in maniplib">ManipElevator</a></dt>
 <dd>
-<div class="block">Stops the <a href="maniplib/ManipElevator.html" title="class in maniplib"><code>ManipElevator</code></a></div>
-</dd>
-<dt><a href="maniplib/ManipElevator.html#stopElevatorCommand()" class="member-name-link">stopElevatorCommand()</a> - Method in class maniplib.<a href="maniplib/ManipElevator.html" title="class in maniplib">ManipElevator</a></dt>
-<dd>
-<div class="block">A command to stop the <a href="maniplib/ManipElevator.html" title="class in maniplib"><code>ManipElevator</code></a></div>
+<div class="block">Stops the elevator.</div>
 </dd>
 <dt><a href="maniplib/motors/ManipMotor.html#stopMotor()" class="member-name-link">stopMotor()</a> - Method in class maniplib.motors.<a href="maniplib/motors/ManipMotor.html" title="class in maniplib.motors">ManipMotor</a></dt>
 <dd>
@@ -690,13 +854,29 @@ loadScripts(document, 'script');</script>
 </dd>
 <dt><a href="maniplib/ManipArm.html#synchronizeAbsoluteEncoder()" class="member-name-link">synchronizeAbsoluteEncoder()</a> - Method in class maniplib.<a href="maniplib/ManipArm.html" title="class in maniplib">ManipArm</a></dt>
 <dd>
-<div class="block">Synchronizes inbuilt encoder to the setup absolute encoder.</div>
+<div class="block">Seeds inbuilt encoder with absolute encoder value.</div>
+</dd>
+<dt><a href="maniplib/ManipElevator.html#synchronizeAbsoluteEncoder()" class="member-name-link">synchronizeAbsoluteEncoder()</a> - Method in class maniplib.<a href="maniplib/ManipElevator.html" title="class in maniplib">ManipElevator</a></dt>
+<dd>
+<div class="block">Seeds inbuilt encoder with absolute encoder value.</div>
 </dd>
 </dl>
 <h2 class="title" id="I:T">T</h2>
 <dl class="index">
-<dt><a href="maniplib/ManipElevator.html#topLimitSwitch" class="member-name-link">topLimitSwitch</a> - Variable in class maniplib.<a href="maniplib/ManipElevator.html" title="class in maniplib">ManipElevator</a></dt>
+<dt><a href="maniplib/Telemetry.html" class="type-name-link" title="class in maniplib">Telemetry</a> - Class in <a href="maniplib/package-summary.html">maniplib</a></dt>
 <dd>&nbsp;</dd>
+<dt><a href="maniplib/Telemetry.html#%3Cinit%3E()" class="member-name-link">Telemetry()</a> - Constructor for class maniplib.<a href="maniplib/Telemetry.html" title="class in maniplib">Telemetry</a></dt>
+<dd>&nbsp;</dd>
+<dt><a href="maniplib/Telemetry.ManipTelemetry.html" class="type-name-link" title="enum class in maniplib">Telemetry.ManipTelemetry</a> - Enum Class in <a href="maniplib/package-summary.html">maniplib</a></dt>
+<dd>&nbsp;</dd>
+<dt><a href="maniplib/ManipArm.html#toggleAutoStow()" class="member-name-link">toggleAutoStow()</a> - Method in class maniplib.<a href="maniplib/ManipArm.html" title="class in maniplib">ManipArm</a></dt>
+<dd>
+<div class="block">Toggles auto-stow of defaultCommandOverride</div>
+</dd>
+<dt><a href="maniplib/ManipElevator.html#toggleAutoStow()" class="member-name-link">toggleAutoStow()</a> - Method in class maniplib.<a href="maniplib/ManipElevator.html" title="class in maniplib">ManipElevator</a></dt>
+<dd>
+<div class="block">Toggles auto-stow of defaultCommandOverride</div>
+</dd>
 </dl>
 <h2 class="title" id="I:U">U</h2>
 <dl class="index">
@@ -719,9 +899,18 @@ loadScripts(document, 'script');</script>
 </dl>
 <h2 class="title" id="I:V">V</h2>
 <dl class="index">
+<dt><a href="maniplib/Telemetry.ManipTelemetry.html#valueOf(java.lang.String)" class="member-name-link">valueOf(String)</a> - Static method in enum class maniplib.<a href="maniplib/Telemetry.ManipTelemetry.html" title="enum class in maniplib">Telemetry.ManipTelemetry</a></dt>
+<dd>
+<div class="block">Returns the enum constant of this class with the specified name.</div>
+</dd>
 <dt><a href="maniplib/utils/PIDControlType.ControlType.html#valueOf(java.lang.String)" class="member-name-link">valueOf(String)</a> - Static method in enum class maniplib.utils.<a href="maniplib/utils/PIDControlType.ControlType.html" title="enum class in maniplib.utils">PIDControlType.ControlType</a></dt>
 <dd>
 <div class="block">Returns the enum constant of this class with the specified name.</div>
+</dd>
+<dt><a href="maniplib/Telemetry.ManipTelemetry.html#values()" class="member-name-link">values()</a> - Static method in enum class maniplib.<a href="maniplib/Telemetry.ManipTelemetry.html" title="enum class in maniplib">Telemetry.ManipTelemetry</a></dt>
+<dd>
+<div class="block">Returns an array containing the constants of this enum class, in
+the order they are declared.</div>
 </dd>
 <dt><a href="maniplib/utils/PIDControlType.ControlType.html#values()" class="member-name-link">values()</a> - Static method in enum class maniplib.utils.<a href="maniplib/utils/PIDControlType.ControlType.html" title="enum class in maniplib.utils">PIDControlType.ControlType</a></dt>
 <dd>
@@ -733,7 +922,7 @@ the order they are declared.</div>
 <div class="block">Velocity Control.</div>
 </dd>
 </dl>
-<a href="#I:A">A</a>&nbsp;<a href="#I:B">B</a>&nbsp;<a href="#I:C">C</a>&nbsp;<a href="#I:D">D</a>&nbsp;<a href="#I:E">E</a>&nbsp;<a href="#I:F">F</a>&nbsp;<a href="#I:G">G</a>&nbsp;<a href="#I:I">I</a>&nbsp;<a href="#I:K">K</a>&nbsp;<a href="#I:L">L</a>&nbsp;<a href="#I:M">M</a>&nbsp;<a href="#I:N">N</a>&nbsp;<a href="#I:O">O</a>&nbsp;<a href="#I:P">P</a>&nbsp;<a href="#I:R">R</a>&nbsp;<a href="#I:S">S</a>&nbsp;<a href="#I:T">T</a>&nbsp;<a href="#I:U">U</a>&nbsp;<a href="#I:V">V</a>&nbsp;<br><a href="allclasses-index.html">All&nbsp;Classes&nbsp;and&nbsp;Interfaces</a><span class="vertical-separator">|</span><a href="allpackages-index.html">All&nbsp;Packages</a><span class="vertical-separator">|</span><a href="constant-values.html">Constant&nbsp;Field&nbsp;Values</a></main>
+<a href="#I:A">A</a>&nbsp;<a href="#I:B">B</a>&nbsp;<a href="#I:C">C</a>&nbsp;<a href="#I:D">D</a>&nbsp;<a href="#I:E">E</a>&nbsp;<a href="#I:F">F</a>&nbsp;<a href="#I:G">G</a>&nbsp;<a href="#I:H">H</a>&nbsp;<a href="#I:I">I</a>&nbsp;<a href="#I:K">K</a>&nbsp;<a href="#I:L">L</a>&nbsp;<a href="#I:M">M</a>&nbsp;<a href="#I:N">N</a>&nbsp;<a href="#I:O">O</a>&nbsp;<a href="#I:P">P</a>&nbsp;<a href="#I:R">R</a>&nbsp;<a href="#I:S">S</a>&nbsp;<a href="#I:T">T</a>&nbsp;<a href="#I:U">U</a>&nbsp;<a href="#I:V">V</a>&nbsp;<br><a href="allclasses-index.html">All&nbsp;Classes&nbsp;and&nbsp;Interfaces</a><span class="vertical-separator">|</span><a href="allpackages-index.html">All&nbsp;Packages</a><span class="vertical-separator">|</span><a href="constant-values.html">Constant&nbsp;Field&nbsp;Values</a></main>
 </div>
 </div>
 </body>
