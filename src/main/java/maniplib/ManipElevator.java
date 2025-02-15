@@ -414,7 +414,7 @@ public class ManipElevator extends SubsystemBase {
      * This stops after command is finished.
      */
     public Command runElevatorSpeedCommand(double speed) {
-        return runEnd(() -> runElevatorSpeed(speed), this::stopElevatorCommand);
+        return runEnd(() -> runElevatorSpeed(speed), this::stopElevator);
     }
 
     /**
@@ -422,7 +422,7 @@ public class ManipElevator extends SubsystemBase {
      * This stops after command is finished.
      */
     public Command runElevatorVoltageCommand(Voltage volts) {
-        return runEnd(() -> runElevatorVoltage(volts), this::stopElevatorCommand);
+        return runEnd(() -> runElevatorVoltage(volts), this::stopElevator);
     }
 
     /**
@@ -514,13 +514,6 @@ public class ManipElevator extends SubsystemBase {
      * Stops the elevator.
      */
     public void stopElevator() {
-        motor.stopMotor();
-    }
-
-    /**
-     * Stops the elevator.
-     */
-    public Command stopElevatorCommand() {
-        return motor.stopMotorCommand();
+        runElevatorSpeed(0.0);
     }
 }

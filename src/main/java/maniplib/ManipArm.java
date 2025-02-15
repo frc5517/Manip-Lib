@@ -388,7 +388,7 @@ public class ManipArm extends SubsystemBase {
      * This stops after command is finished.
      */
     public Command runArmSpeedCommand(double speed) {
-        return runEnd(() -> runArmSpeed(speed), this::stopArmCommand);
+        return runEnd(() -> runArmSpeed(speed), this::stopArm);
     }
 
     /**
@@ -396,7 +396,7 @@ public class ManipArm extends SubsystemBase {
      * This stops after command is finished.
      */
     public Command runArmVoltageCommand(Voltage volts) {
-        return runEnd(() -> runArmVoltage(volts), this::stopArmCommand);
+        return runEnd(() -> runArmVoltage(volts), this::stopArm);
     }
 
     /**
@@ -486,13 +486,6 @@ public class ManipArm extends SubsystemBase {
      * Stops the arm.
      */
     public void stopArm() {
-        motor.stopMotor();
-    }
-
-    /**
-     * Stops the arm.
-     */
-    public Command stopArmCommand() {
-        return motor.stopMotorCommand();
+        runArmSpeed(0.0);
     }
 }
