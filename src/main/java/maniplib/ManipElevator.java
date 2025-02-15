@@ -386,14 +386,16 @@ public class ManipElevator extends SubsystemBase {
 
     /**
      * Basic method to run the elevator at commanded speed.
+     * This does not stop!!
      */
     public void runElevatorSpeed(double speed) {
         limitSwitchFunction();
-        motor.set(-speed);
+        motor.set(speed);
     }
 
     /**
      * Basic method to run the elevator at commanded voltage.
+     * This does not stop!!
      */
     public void runElevatorVoltage(Voltage volts) {
         limitSwitchFunction();
@@ -409,16 +411,18 @@ public class ManipElevator extends SubsystemBase {
 
     /**
      * Runs runElevatorSpeed as a {@link Command}.
+     * This stops after command is finished.
      */
     public Command runElevatorSpeedCommand(double speed) {
-        return run(() -> runElevatorSpeed(speed));
+        return runEnd(() -> runElevatorSpeed(speed), this::stopElevatorCommand);
     }
 
     /**
      * Runs runElevatorVoltage as a {@link Command}.
+     * This stops after command is finished.
      */
     public Command runElevatorVoltageCommand(Voltage volts) {
-        return run(() -> runElevatorVoltage(volts));
+        return runEnd(() -> runElevatorVoltage(volts), this::stopElevatorCommand);
     }
 
     /**
@@ -445,19 +449,36 @@ public class ManipElevator extends SubsystemBase {
      */
     public void limitSwitchFunction() {
 
-        if (atMax.getAsBoolean() || atMin.getAsBoolean()) {
+        if (motor.getAppliedOutput() > 0 && atMax.getAsBoolean()) {
             stopElevator();
+        } else {
+            Commands.none(); // Stop stopping the arm
+        }
+        if (motor.getAppliedOutput() < 0 && atMin.getAsBoolean()) {
+            stopElevator();
+        } else {
+            Commands.none(); // Stop stopping the arm
         }
 
         if (topLimitHit != null) {
-            if (motor.getAppliedOutput() > 0 && bottomLimitHit.getAsBoolean()) {
+            if (motor.getAppliedOutput() > 0 && topLimitHit.getAsBoolean()) {
                 stopElevator();
+
+                motor.setPosition(ManipMath.Elevator.convertDistanceToRotations(
+                        elevatorConstants.kElevatorDrumRadius,
+                        elevatorConstants.kElevatorGearing,
+                        elevatorConstants.kMaxHeight).in(Rotations));
             } else {
                 Commands.none(); // Stop stopping the arm
             }
         }
         if (bottomLimitHit != null) {
             if (motor.getAppliedOutput() < 0 && bottomLimitHit.getAsBoolean()) {
+                motor.setPosition(ManipMath.Elevator.convertDistanceToRotations(
+                        elevatorConstants.kElevatorDrumRadius,
+                        elevatorConstants.kElevatorGearing,
+                        elevatorConstants.kMinHeight).in(Rotations));
+
                 stopElevator();
             } else {
                 Commands.none(); // Stop stopping the arm
@@ -494,5 +515,12 @@ public class ManipElevator extends SubsystemBase {
      */
     public void stopElevator() {
         motor.stopMotor();
+    }
+
+    /**
+     * Stops the elevator.
+     */
+    public Command stopElevatorCommand() {
+        return motor.stopMotorCommand();
     }
 }

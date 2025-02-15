@@ -3,14 +3,15 @@
   <groupId>maniplib</groupId>
   <artifactId>ManipLib-cpp</artifactId>
   <versioning>
-    <latest>2025.0.0-beta0.2</latest>
-    <release>2025.0.0-beta0.2</release>
+    <latest>2025.0.0-beta0.3</latest>
+    <release>2025.0.0-beta0.3</release>
     <versions>
       <version>test</version>
       <version>2025.0.0-beta0</version>
       <version>2025.0.0-beta0.1</version>
       <version>2025.0.0-beta0.2</version>
+      <version>2025.0.0-beta0.3</version>
     </versions>
-    <lastUpdated>20250215031643</lastUpdated>
+    <lastUpdated>20250215052348</lastUpdated>
   </versioning>
 </metadata>

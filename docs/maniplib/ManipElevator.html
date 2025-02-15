@@ -246,14 +246,19 @@ loadScripts(document, 'script');</script>
 <div class="col-last even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4">
 <div class="block">Stops the elevator.</div>
 </div>
-<div class="col-first odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code>void</code></div>
-<div class="col-second odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#synchronizeAbsoluteEncoder()" class="member-name-link">synchronizeAbsoluteEncoder</a>()</code></div>
+<div class="col-first odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="https://github.wpilib.org/allwpilib/docs/release/java/edu/wpi/first/wpilibj2/command/Command.html" title="class or interface in edu.wpi.first.wpilibj2.command" class="external-link">Command</a></code></div>
+<div class="col-second odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#stopElevatorCommand()" class="member-name-link">stopElevatorCommand</a>()</code></div>
 <div class="col-last odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4">
+<div class="block">Stops the elevator.</div>
+</div>
+<div class="col-first even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code>void</code></div>
+<div class="col-second even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#synchronizeAbsoluteEncoder()" class="member-name-link">synchronizeAbsoluteEncoder</a>()</code></div>
+<div class="col-last even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4">
 <div class="block">Seeds inbuilt encoder with absolute encoder value.</div>
 </div>
-<div class="col-first even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="https://github.wpilib.org/allwpilib/docs/release/java/edu/wpi/first/wpilibj2/command/Command.html" title="class or interface in edu.wpi.first.wpilibj2.command" class="external-link">Command</a></code></div>
-<div class="col-second even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#toggleAutoStow()" class="member-name-link">toggleAutoStow</a>()</code></div>
-<div class="col-last even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4">
+<div class="col-first odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="https://github.wpilib.org/allwpilib/docs/release/java/edu/wpi/first/wpilibj2/command/Command.html" title="class or interface in edu.wpi.first.wpilibj2.command" class="external-link">Command</a></code></div>
+<div class="col-second odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#toggleAutoStow()" class="member-name-link">toggleAutoStow</a>()</code></div>
+<div class="col-last odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4">
 <div class="block">Toggles auto-stow of defaultCommandOverride</div>
 </div>
 </div>
@@ -479,14 +484,16 @@ loadScripts(document, 'script');</script>
 <section class="detail" id="runElevatorSpeed(double)">
 <h3>runElevatorSpeed</h3>
 <div class="member-signature"><span class="modifiers">public</span>&nbsp;<span class="return-type">void</span>&nbsp;<span class="element-name">runElevatorSpeed</span><wbr><span class="parameters">(double&nbsp;speed)</span></div>
-<div class="block">Basic method to run the elevator at commanded speed.</div>
+<div class="block">Basic method to run the elevator at commanded speed.
+ This does not stop!!</div>
 </section>
 </li>
 <li>
 <section class="detail" id="runElevatorVoltage(edu.wpi.first.units.measure.Voltage)">
 <h3>runElevatorVoltage</h3>
 <div class="member-signature"><span class="modifiers">public</span>&nbsp;<span class="return-type">void</span>&nbsp;<span class="element-name">runElevatorVoltage</span><wbr><span class="parameters">(<a href="https://github.wpilib.org/allwpilib/docs/release/java/edu/wpi/first/units/measure/Voltage.html" title="class or interface in edu.wpi.first.units.measure" class="external-link">Voltage</a>&nbsp;volts)</span></div>
-<div class="block">Basic method to run the elevator at commanded voltage.</div>
+<div class="block">Basic method to run the elevator at commanded voltage.
+ This does not stop!!</div>
 </section>
 </li>
 <li>
@@ -500,14 +507,16 @@ loadScripts(document, 'script');</script>
 <section class="detail" id="runElevatorSpeedCommand(double)">
 <h3>runElevatorSpeedCommand</h3>
 <div class="member-signature"><span class="modifiers">public</span>&nbsp;<span class="return-type"><a href="https://github.wpilib.org/allwpilib/docs/release/java/edu/wpi/first/wpilibj2/command/Command.html" title="class or interface in edu.wpi.first.wpilibj2.command" class="external-link">Command</a></span>&nbsp;<span class="element-name">runElevatorSpeedCommand</span><wbr><span class="parameters">(double&nbsp;speed)</span></div>
-<div class="block">Runs runElevatorSpeed as a <a href="https://github.wpilib.org/allwpilib/docs/release/java/edu/wpi/first/wpilibj2/command/Command.html" title="class or interface in edu.wpi.first.wpilibj2.command" class="external-link"><code>Command</code></a>.</div>
+<div class="block">Runs runElevatorSpeed as a <a href="https://github.wpilib.org/allwpilib/docs/release/java/edu/wpi/first/wpilibj2/command/Command.html" title="class or interface in edu.wpi.first.wpilibj2.command" class="external-link"><code>Command</code></a>.
+ This stops after command is finished.</div>
 </section>
 </li>
 <li>
 <section class="detail" id="runElevatorVoltageCommand(edu.wpi.first.units.measure.Voltage)">
 <h3>runElevatorVoltageCommand</h3>
 <div class="member-signature"><span class="modifiers">public</span>&nbsp;<span class="return-type"><a href="https://github.wpilib.org/allwpilib/docs/release/java/edu/wpi/first/wpilibj2/command/Command.html" title="class or interface in edu.wpi.first.wpilibj2.command" class="external-link">Command</a></span>&nbsp;<span class="element-name">runElevatorVoltageCommand</span><wbr><span class="parameters">(<a href="https://github.wpilib.org/allwpilib/docs/release/java/edu/wpi/first/units/measure/Voltage.html" title="class or interface in edu.wpi.first.units.measure" class="external-link">Voltage</a>&nbsp;volts)</span></div>
-<div class="block">Runs runElevatorVoltage as a <a href="https://github.wpilib.org/allwpilib/docs/release/java/edu/wpi/first/wpilibj2/command/Command.html" title="class or interface in edu.wpi.first.wpilibj2.command" class="external-link"><code>Command</code></a>.</div>
+<div class="block">Runs runElevatorVoltage as a <a href="https://github.wpilib.org/allwpilib/docs/release/java/edu/wpi/first/wpilibj2/command/Command.html" title="class or interface in edu.wpi.first.wpilibj2.command" class="external-link"><code>Command</code></a>.
+ This stops after command is finished.</div>
 </section>
 </li>
 <li>
@@ -560,6 +569,13 @@ loadScripts(document, 'script');</script>
 <section class="detail" id="stopElevator()">
 <h3>stopElevator</h3>
 <div class="member-signature"><span class="modifiers">public</span>&nbsp;<span class="return-type">void</span>&nbsp;<span class="element-name">stopElevator</span>()</div>
+<div class="block">Stops the elevator.</div>
+</section>
+</li>
+<li>
+<section class="detail" id="stopElevatorCommand()">
+<h3>stopElevatorCommand</h3>
+<div class="member-signature"><span class="modifiers">public</span>&nbsp;<span class="return-type"><a href="https://github.wpilib.org/allwpilib/docs/release/java/edu/wpi/first/wpilibj2/command/Command.html" title="class or interface in edu.wpi.first.wpilibj2.command" class="external-link">Command</a></span>&nbsp;<span class="element-name">stopElevatorCommand</span>()</div>
 <div class="block">Stops the elevator.</div>
 </section>
 </li>
