@@ -123,8 +123,8 @@ task vendordepJson() {
         from "maniplib.json"
         into "maniplib/"
         expand(version: pubVersion,
-        groupId: artifactGroupId,
-        artifactId: baseArtifactId)
+                groupId: artifactGroupId,
+                artifactId: baseArtifactId)
     }
 }
 
