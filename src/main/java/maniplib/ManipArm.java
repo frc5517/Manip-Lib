@@ -94,8 +94,8 @@ public class ManipArm extends SubsystemBase {
 
             this.topLimit.onTrue(run(() ->
                     motor.setPosition((ManipMath.Arm.convertAngleToSensorUnits(
-                    armConstants.kArmReduction,
-                    armConstants.kMaxAngle)).in(Rotations))));
+                            armConstants.kArmReduction,
+                            armConstants.kMaxAngle)).in(Rotations))));
             this.bottomLimit.onTrue(run(() ->
                     motor.setPosition((ManipMath.Arm.convertAngleToSensorUnits(
                             armConstants.kArmReduction,
@@ -347,7 +347,7 @@ public class ManipArm extends SubsystemBase {
                             setpointState.velocity));
 
         } else {
-        motor.setReference(setpoint);
+            motor.setReference(setpoint);
         }
     }
 
