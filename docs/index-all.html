@@ -396,14 +396,6 @@ loadScripts(document, 'script');</script>
 </dl>
 <h2 class="title" id="I:L">L</h2>
 <dl class="index">
-<dt><a href="maniplib/ManipArm.html#limitSwitchFunction()" class="member-name-link">limitSwitchFunction()</a> - Method in class maniplib.<a href="maniplib/ManipArm.html" title="class in maniplib">ManipArm</a></dt>
-<dd>
-<div class="block">Function that sees if there's active limit switches then stops the <a href="maniplib/ManipArm.html" title="class in maniplib"><code>ManipArm</code></a> if one is hit.</div>
-</dd>
-<dt><a href="maniplib/ManipElevator.html#limitSwitchFunction()" class="member-name-link">limitSwitchFunction()</a> - Method in class maniplib.<a href="maniplib/ManipElevator.html" title="class in maniplib">ManipElevator</a></dt>
-<dd>
-<div class="block">Function that sees if there's active limit switches then stops the <a href="maniplib/ManipElevator.html" title="class in maniplib"><code>ManipElevator</code></a> if one is hit.</div>
-</dd>
 <dt><a href="maniplib/Telemetry.ManipTelemetry.html#LOW" class="member-name-link">LOW</a> - Enum constant in enum class maniplib.<a href="maniplib/Telemetry.ManipTelemetry.html" title="enum class in maniplib">Telemetry.ManipTelemetry</a></dt>
 <dd>&nbsp;</dd>
 </dl>
@@ -662,13 +654,17 @@ loadScripts(document, 'script');</script>
 <dd>
 <div class="block">Sets the <a href="maniplib/motors/ManipSparkMax.html" title="class in maniplib.motors"><code>ManipSparkMax</code></a> to follow another <a href="maniplib/motors/ManipMotor.html" title="class in maniplib.motors"><code>ManipMotor</code></a>.</div>
 </dd>
-<dt><a href="maniplib/ManipArm.html#setBottomLimitSwitch(edu.wpi.first.wpilibj2.command.button.Trigger)" class="member-name-link">setBottomLimitSwitch(Trigger)</a> - Method in class maniplib.<a href="maniplib/ManipArm.html" title="class in maniplib">ManipArm</a></dt>
+<dt><a href="maniplib/ManipArm.html#setAutoStow(boolean)" class="member-name-link">setAutoStow(boolean)</a> - Method in class maniplib.<a href="maniplib/ManipArm.html" title="class in maniplib">ManipArm</a></dt>
+<dd>&nbsp;</dd>
+<dt><a href="maniplib/ManipElevator.html#setAutoStow(boolean)" class="member-name-link">setAutoStow(boolean)</a> - Method in class maniplib.<a href="maniplib/ManipElevator.html" title="class in maniplib">ManipElevator</a></dt>
+<dd>&nbsp;</dd>
+<dt><a href="maniplib/ManipArm.html#setBottomLimitSwitch(boolean)" class="member-name-link">setBottomLimitSwitch(boolean)</a> - Method in class maniplib.<a href="maniplib/ManipArm.html" title="class in maniplib">ManipArm</a></dt>
 <dd>
-<div class="block">Sets the <a href="https://github.wpilib.org/allwpilib/docs/release/java/edu/wpi/first/wpilibj2/command/button/Trigger.html" title="class or interface in edu.wpi.first.wpilibj2.command.button" class="external-link"><code>Trigger</code></a> for when the bottom limit switch is hit for <a href="maniplib/ManipArm.html" title="class in maniplib"><code>ManipArm</code></a>.</div>
+<div class="block">Sets the <a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/Boolean.html" title="class or interface in java.lang" class="external-link"><code>Boolean</code></a> for when the bottom limit switch is hit for <a href="maniplib/ManipArm.html" title="class in maniplib"><code>ManipArm</code></a>.</div>
 </dd>
-<dt><a href="maniplib/ManipElevator.html#setBottomLimitSwitch(edu.wpi.first.wpilibj2.command.button.Trigger)" class="member-name-link">setBottomLimitSwitch(Trigger)</a> - Method in class maniplib.<a href="maniplib/ManipElevator.html" title="class in maniplib">ManipElevator</a></dt>
+<dt><a href="maniplib/ManipElevator.html#setBottomLimitSwitch(boolean)" class="member-name-link">setBottomLimitSwitch(boolean)</a> - Method in class maniplib.<a href="maniplib/ManipElevator.html" title="class in maniplib">ManipElevator</a></dt>
 <dd>
-<div class="block">Sets the <a href="https://github.wpilib.org/allwpilib/docs/release/java/edu/wpi/first/wpilibj2/command/button/Trigger.html" title="class or interface in edu.wpi.first.wpilibj2.command.button" class="external-link"><code>Trigger</code></a> for when the bottom limit switch is hit for <a href="maniplib/ManipElevator.html" title="class in maniplib"><code>ManipElevator</code></a>.</div>
+<div class="block">Sets the <a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/Boolean.html" title="class or interface in java.lang" class="external-link"><code>Boolean</code></a> for when the bottom limit switch is hit for <a href="maniplib/ManipElevator.html" title="class in maniplib"><code>ManipElevator</code></a>.</div>
 </dd>
 <dt><a href="maniplib/motors/ManipMotor.html#setCurrentLimit(int)" class="member-name-link">setCurrentLimit(int)</a> - Method in class maniplib.motors.<a href="maniplib/motors/ManipMotor.html" title="class in maniplib.motors">ManipMotor</a></dt>
 <dd>
@@ -766,13 +762,13 @@ loadScripts(document, 'script');</script>
 <div class="block">Determines whether to sync the absolute encoder in the
  <a href="maniplib/ManipElevator.html" title="class in maniplib"><code>ManipElevator</code></a> class or not.</div>
 </dd>
-<dt><a href="maniplib/ManipArm.html#setTopLimitSwitch(edu.wpi.first.wpilibj2.command.button.Trigger)" class="member-name-link">setTopLimitSwitch(Trigger)</a> - Method in class maniplib.<a href="maniplib/ManipArm.html" title="class in maniplib">ManipArm</a></dt>
+<dt><a href="maniplib/ManipArm.html#setTopLimitSwitch(boolean)" class="member-name-link">setTopLimitSwitch(boolean)</a> - Method in class maniplib.<a href="maniplib/ManipArm.html" title="class in maniplib">ManipArm</a></dt>
 <dd>
-<div class="block">Sets the <a href="https://github.wpilib.org/allwpilib/docs/release/java/edu/wpi/first/wpilibj2/command/button/Trigger.html" title="class or interface in edu.wpi.first.wpilibj2.command.button" class="external-link"><code>Trigger</code></a> for when the top limit switch is hit for <a href="maniplib/ManipArm.html" title="class in maniplib"><code>ManipArm</code></a>.</div>
+<div class="block">Sets the <a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/Boolean.html" title="class or interface in java.lang" class="external-link"><code>Boolean</code></a> for when the top limit switch is hit for <a href="maniplib/ManipArm.html" title="class in maniplib"><code>ManipArm</code></a>.</div>
 </dd>
-<dt><a href="maniplib/ManipElevator.html#setTopLimitSwitch(edu.wpi.first.wpilibj2.command.button.Trigger)" class="member-name-link">setTopLimitSwitch(Trigger)</a> - Method in class maniplib.<a href="maniplib/ManipElevator.html" title="class in maniplib">ManipElevator</a></dt>
+<dt><a href="maniplib/ManipElevator.html#setTopLimitSwitch(boolean)" class="member-name-link">setTopLimitSwitch(boolean)</a> - Method in class maniplib.<a href="maniplib/ManipElevator.html" title="class in maniplib">ManipElevator</a></dt>
 <dd>
-<div class="block">Sets the <a href="https://github.wpilib.org/allwpilib/docs/release/java/edu/wpi/first/wpilibj2/command/button/Trigger.html" title="class or interface in edu.wpi.first.wpilibj2.command.button" class="external-link"><code>Trigger</code></a> for when the top limit switch is hit for <a href="maniplib/ManipElevator.html" title="class in maniplib"><code>ManipElevator</code></a>.</div>
+<div class="block">Sets the <a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/Boolean.html" title="class or interface in java.lang" class="external-link"><code>Boolean</code></a> for when the top limit switch is hit for <a href="maniplib/ManipElevator.html" title="class in maniplib"><code>ManipElevator</code></a>.</div>
 </dd>
 <dt><a href="maniplib/motors/ManipMotor.html#setupRioPID(maniplib.utils.PIDFConfig,double,double,double,boolean)" class="member-name-link">setupRioPID(PIDFConfig, double, double, double, boolean)</a> - Method in class maniplib.motors.<a href="maniplib/motors/ManipMotor.html" title="class in maniplib.motors">ManipMotor</a></dt>
 <dd>
