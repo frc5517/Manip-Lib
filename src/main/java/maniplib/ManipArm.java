@@ -90,8 +90,8 @@ public class ManipArm extends SubsystemBase {
 
             this.atMin = new Trigger(() -> getAngle().isNear(this.armConstants.kMinAngle, Degrees.of(3)));
             this.atMax = new Trigger(() -> getAngle().isNear(this.armConstants.kMaxAngle, Degrees.of(3)));
-            this.goingDown = new Trigger(() -> motor.getAppliedOutput() > 0);
-            this.goingUp = new Trigger(() -> motor.getAppliedOutput() < 0);
+            this.goingDown = new Trigger(() -> motor.getAppliedOutput() < 0);
+            this.goingUp = new Trigger(() -> motor.getAppliedOutput() > 0);
 
             this.atMin.and(goingDown).or(topLimit).onTrue(run(this::stopArm));
             this.atMax.and(goingUp).or(topLimit).onTrue(run(this::stopArm));

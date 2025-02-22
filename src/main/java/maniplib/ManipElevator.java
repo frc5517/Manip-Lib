@@ -81,8 +81,8 @@ public class ManipElevator extends SubsystemBase {
 
             this.atMin = new Trigger(() -> getLinearPosition().isNear(config.kMinHeight, Inches.of(1)));
             this.atMax = new Trigger(() -> getLinearPosition().isNear(config.kMaxHeight, Inches.of(1)));
-            this.goingDown = new Trigger(() -> motor.getAppliedOutput() > 0);
-            this.goingUp = new Trigger(() -> motor.getAppliedOutput() < 0);
+            this.goingDown = new Trigger(() -> motor.getAppliedOutput() < 0);
+            this.goingUp = new Trigger(() -> motor.getAppliedOutput() > 0);
 
             this.atMin.and(goingDown).or(topLimit).onTrue(run(this::stopElevator));
             this.atMax.and(goingUp).or(topLimit).onTrue(run(this::stopElevator));
