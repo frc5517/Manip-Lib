@@ -101,7 +101,8 @@ loadScripts(document, 'script');</script>
 <div class="col-constructor-name odd-row-color"><code><a href="#%3Cinit%3E(maniplib.motors.ManipMotor,maniplib.utils.ManipElevatorConstants)" class="member-name-link">ManipElevator</a><wbr>(<a href="motors/ManipMotor.html" title="class in maniplib.motors">ManipMotor</a>&nbsp;motor,
  <a href="utils/ManipElevatorConstants.html" title="class in maniplib.utils">ManipElevatorConstants</a>&nbsp;config)</code></div>
 <div class="col-last odd-row-color">
-<div class="block">Subsystem constructor, advanced <a href="ManipElevator.html" title="class in maniplib"><code>ManipElevator</code></a> when config.kEnableAdvanced is set to true.</div>
+<div class="block">Subsystem constructor, advanced <a href="ManipElevator.html" title="class in maniplib"><code>ManipElevator</code></a> when config.kEnableAdvanced is set to
+ true.</div>
 </div>
 <div class="col-constructor-name even-row-color"><code><a href="#%3Cinit%3E(maniplib.motors.ManipMotor,maniplib.utils.PIDFConfig)" class="member-name-link">ManipElevator</a><wbr>(<a href="motors/ManipMotor.html" title="class in maniplib.motors">ManipMotor</a>&nbsp;motor,
  <a href="utils/PIDFConfig.html" title="class in maniplib.utils">PIDFConfig</a>&nbsp;pidfConfig)</code></div>
@@ -226,8 +227,7 @@ loadScripts(document, 'script');</script>
 <div class="col-first odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code>void</code></div>
 <div class="col-second odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#setSyncAbsEncoderInit(boolean)" class="member-name-link">setSyncAbsEncoderInit</a><wbr>(boolean&nbsp;syncAbsEncoderInit)</code></div>
 <div class="col-last odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4">
-<div class="block">Determines whether to sync the absolute encoder in the
- <a href="ManipElevator.html" title="class in maniplib"><code>ManipElevator</code></a> class or not.</div>
+<div class="block">Determines whether to sync the absolute encoder in the <a href="ManipElevator.html" title="class in maniplib"><code>ManipElevator</code></a> class or not.</div>
 </div>
 <div class="col-first even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code>void</code></div>
 <div class="col-second even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#setTopLimitSwitch(boolean)" class="member-name-link">setTopLimitSwitch</a><wbr>(boolean&nbsp;topLimit)</code></div>
@@ -282,7 +282,8 @@ loadScripts(document, 'script');</script>
 <h3>ManipElevator</h3>
 <div class="member-signature"><span class="modifiers">public</span>&nbsp;<span class="element-name">ManipElevator</span><wbr><span class="parameters">(<a href="motors/ManipMotor.html" title="class in maniplib.motors">ManipMotor</a>&nbsp;motor,
  <a href="utils/ManipElevatorConstants.html" title="class in maniplib.utils">ManipElevatorConstants</a>&nbsp;config)</span></div>
-<div class="block">Subsystem constructor, advanced <a href="ManipElevator.html" title="class in maniplib"><code>ManipElevator</code></a> when config.kEnableAdvanced is set to true.</div>
+<div class="block">Subsystem constructor, advanced <a href="ManipElevator.html" title="class in maniplib"><code>ManipElevator</code></a> when config.kEnableAdvanced is set to
+ true.</div>
 </section>
 </li>
 <li>
@@ -318,8 +319,7 @@ loadScripts(document, 'script');</script>
 <section class="detail" id="simulationPeriodic()">
 <h3>simulationPeriodic</h3>
 <div class="member-signature"><span class="modifiers">public</span>&nbsp;<span class="return-type">void</span>&nbsp;<span class="element-name">simulationPeriodic</span>()</div>
-<div class="block">Ran periodically in simulation.
- Controls the elevator simulation.</div>
+<div class="block">Ran periodically in simulation. Controls the elevator simulation.</div>
 </section>
 </li>
 <li>
@@ -349,24 +349,23 @@ loadScripts(document, 'script');</script>
 <section class="detail" id="addAbsoluteEncoderValue(double)">
 <h3>addAbsoluteEncoderValue</h3>
 <div class="member-signature"><span class="modifiers">public</span>&nbsp;<span class="return-type">void</span>&nbsp;<span class="element-name">addAbsoluteEncoderValue</span><wbr><span class="parameters">(double&nbsp;absEncoderDegrees)</span></div>
-<div class="block">Adds an absolute encoder to sync to on init. This is not used for actual control
- but recommended to keep elevator position on boot. Can be called in init.</div>
+<div class="block">Adds an absolute encoder to sync to on init. This is not used for actual control but
+ recommended to keep elevator position on boot. Can be called in init.</div>
 </section>
 </li>
 <li>
 <section class="detail" id="setSyncAbsEncoderInit(boolean)">
 <h3>setSyncAbsEncoderInit</h3>
 <div class="member-signature"><span class="modifiers">public</span>&nbsp;<span class="return-type">void</span>&nbsp;<span class="element-name">setSyncAbsEncoderInit</span><wbr><span class="parameters">(boolean&nbsp;syncAbsEncoderInit)</span></div>
-<div class="block">Determines whether to sync the absolute encoder in the
- <a href="ManipElevator.html" title="class in maniplib"><code>ManipElevator</code></a> class or not. This is enabled by default.</div>
+<div class="block">Determines whether to sync the absolute encoder in the <a href="ManipElevator.html" title="class in maniplib"><code>ManipElevator</code></a> class or not. This
+ is enabled by default.</div>
 </section>
 </li>
 <li>
 <section class="detail" id="synchronizeAbsoluteEncoder()">
 <h3>synchronizeAbsoluteEncoder</h3>
 <div class="member-signature"><span class="modifiers">public</span>&nbsp;<span class="return-type">void</span>&nbsp;<span class="element-name">synchronizeAbsoluteEncoder</span>()</div>
-<div class="block">Seeds inbuilt encoder with absolute encoder value.
- Syncs on init by default.</div>
+<div class="block">Seeds inbuilt encoder with absolute encoder value. Syncs on init by default.</div>
 </section>
 </li>
 <li>
@@ -469,24 +468,22 @@ loadScripts(document, 'script');</script>
 <section class="detail" id="reachSetpoint(double)">
 <h3>reachSetpoint</h3>
 <div class="member-signature"><span class="modifiers">public</span>&nbsp;<span class="return-type">void</span>&nbsp;<span class="element-name">reachSetpoint</span><wbr><span class="parameters">(double&nbsp;setpointInches)</span></div>
-<div class="block">Run the control loop to reach and maintain the setpoint from the preferences.
- If using basic control setpoint is in sensor units.</div>
+<div class="block">Run the control loop to reach and maintain the setpoint from the preferences. If using basic
+ control setpoint is in sensor units.</div>
 </section>
 </li>
 <li>
 <section class="detail" id="runElevatorSpeed(double)">
 <h3>runElevatorSpeed</h3>
 <div class="member-signature"><span class="modifiers">public</span>&nbsp;<span class="return-type">void</span>&nbsp;<span class="element-name">runElevatorSpeed</span><wbr><span class="parameters">(double&nbsp;speed)</span></div>
-<div class="block">Basic method to run the elevator at commanded speed.
- This does not stop!!</div>
+<div class="block">Basic method to run the elevator at commanded speed. This does not stop!!</div>
 </section>
 </li>
 <li>
 <section class="detail" id="runElevatorVoltage(edu.wpi.first.units.measure.Voltage)">
 <h3>runElevatorVoltage</h3>
 <div class="member-signature"><span class="modifiers">public</span>&nbsp;<span class="return-type">void</span>&nbsp;<span class="element-name">runElevatorVoltage</span><wbr><span class="parameters">(<a href="https://github.wpilib.org/allwpilib/docs/release/java/edu/wpi/first/units/measure/Voltage.html" title="class or interface in edu.wpi.first.units.measure" class="external-link">Voltage</a>&nbsp;volts)</span></div>
-<div class="block">Basic method to run the elevator at commanded voltage.
- This does not stop!!</div>
+<div class="block">Basic method to run the elevator at commanded voltage. This does not stop!!</div>
 </section>
 </li>
 <li>
@@ -500,16 +497,14 @@ loadScripts(document, 'script');</script>
 <section class="detail" id="runElevatorSpeedCommand(double)">
 <h3>runElevatorSpeedCommand</h3>
 <div class="member-signature"><span class="modifiers">public</span>&nbsp;<span class="return-type"><a href="https://github.wpilib.org/allwpilib/docs/release/java/edu/wpi/first/wpilibj2/command/Command.html" title="class or interface in edu.wpi.first.wpilibj2.command" class="external-link">Command</a></span>&nbsp;<span class="element-name">runElevatorSpeedCommand</span><wbr><span class="parameters">(double&nbsp;speed)</span></div>
-<div class="block">Runs runElevatorSpeed as a <a href="https://github.wpilib.org/allwpilib/docs/release/java/edu/wpi/first/wpilibj2/command/Command.html" title="class or interface in edu.wpi.first.wpilibj2.command" class="external-link"><code>Command</code></a>.
- This stops after command is finished.</div>
+<div class="block">Runs runElevatorSpeed as a <a href="https://github.wpilib.org/allwpilib/docs/release/java/edu/wpi/first/wpilibj2/command/Command.html" title="class or interface in edu.wpi.first.wpilibj2.command" class="external-link"><code>Command</code></a>. This stops after command is finished.</div>
 </section>
 </li>
 <li>
 <section class="detail" id="runElevatorVoltageCommand(edu.wpi.first.units.measure.Voltage)">
 <h3>runElevatorVoltageCommand</h3>
 <div class="member-signature"><span class="modifiers">public</span>&nbsp;<span class="return-type"><a href="https://github.wpilib.org/allwpilib/docs/release/java/edu/wpi/first/wpilibj2/command/Command.html" title="class or interface in edu.wpi.first.wpilibj2.command" class="external-link">Command</a></span>&nbsp;<span class="element-name">runElevatorVoltageCommand</span><wbr><span class="parameters">(<a href="https://github.wpilib.org/allwpilib/docs/release/java/edu/wpi/first/units/measure/Voltage.html" title="class or interface in edu.wpi.first.units.measure" class="external-link">Voltage</a>&nbsp;volts)</span></div>
-<div class="block">Runs runElevatorVoltage as a <a href="https://github.wpilib.org/allwpilib/docs/release/java/edu/wpi/first/wpilibj2/command/Command.html" title="class or interface in edu.wpi.first.wpilibj2.command" class="external-link"><code>Command</code></a>.
- This stops after command is finished.</div>
+<div class="block">Runs runElevatorVoltage as a <a href="https://github.wpilib.org/allwpilib/docs/release/java/edu/wpi/first/wpilibj2/command/Command.html" title="class or interface in edu.wpi.first.wpilibj2.command" class="external-link"><code>Command</code></a>. This stops after command is finished.</div>
 </section>
 </li>
 <li>
@@ -530,9 +525,9 @@ loadScripts(document, 'script');</script>
 <section class="detail" id="autoStowWithOverride(double)">
 <h3>autoStowWithOverride</h3>
 <div class="member-signature"><span class="modifiers">public</span>&nbsp;<span class="return-type"><a href="https://github.wpilib.org/allwpilib/docs/release/java/edu/wpi/first/wpilibj2/command/Command.html" title="class or interface in edu.wpi.first.wpilibj2.command" class="external-link">Command</a></span>&nbsp;<span class="element-name">autoStowWithOverride</span><wbr><span class="parameters">(double&nbsp;stowHeight)</span></div>
-<div class="block">A command to be used as a default command to stow the elevator.
- Use toggleAutoStow() to toggle it on and off.
- It's good for if you want it to stow but want safety or to be able to control manually.</div>
+<div class="block">A command to be used as a default command to stow the elevator. Use toggleAutoStow() to toggle
+ it on and off. It's good for if you want it to stow but want safety or to be able to control
+ manually.</div>
 </section>
 </li>
 <li>
