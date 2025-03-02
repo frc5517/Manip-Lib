@@ -189,6 +189,16 @@ loadScripts(document, 'script');</script>
 <div class="col-last odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4">
 <div class="block">Runs runArmVoltage as a <a href="https://github.wpilib.org/allwpilib/docs/release/java/edu/wpi/first/wpilibj2/command/Command.html" title="class or interface in edu.wpi.first.wpilibj2.command" class="external-link"><code>Command</code></a>.</div>
 </div>
+<div class="col-first even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code>void</code></div>
+<div class="col-second even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#runkG()" class="member-name-link">runkG</a>()</code></div>
+<div class="col-last even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4">
+<div class="block">Powers the motor with the kG feedforward value.</div>
+</div>
+<div class="col-first odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="https://github.wpilib.org/allwpilib/docs/release/java/edu/wpi/first/wpilibj2/command/Command.html" title="class or interface in edu.wpi.first.wpilibj2.command" class="external-link">Command</a></code></div>
+<div class="col-second odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#runkGCommand()" class="member-name-link">runkGCommand</a>()</code></div>
+<div class="col-last odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4">
+<div class="block">Powers the motor with the kG feedforward value as a command.</div>
+</div>
 <div class="col-first even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="https://github.wpilib.org/allwpilib/docs/release/java/edu/wpi/first/wpilibj2/command/Command.html" title="class or interface in edu.wpi.first.wpilibj2.command" class="external-link">Command</a></code></div>
 <div class="col-second even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#runSysIdRoutine()" class="member-name-link">runSysIdRoutine</a>()</code></div>
 <div class="col-last even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4">
@@ -210,7 +220,8 @@ loadScripts(document, 'script');</script>
 <div class="col-first even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code>void</code></div>
 <div class="col-second even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#setSyncAbsEncoderInit(boolean)" class="member-name-link">setSyncAbsEncoderInit</a><wbr>(boolean&nbsp;syncAbsEncoderInit)</code></div>
 <div class="col-last even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4">
-<div class="block">Determines whether to sync the absolute encoder in the <a href="ManipArm.html" title="class in maniplib"><code>ManipArm</code></a> class or not.</div>
+<div class="block">Determines whether to sync the absolute encoder in the
+ <a href="ManipArm.html" title="class in maniplib"><code>ManipArm</code></a> class or not.</div>
 </div>
 <div class="col-first odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code>void</code></div>
 <div class="col-second odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#setTopLimitSwitch(boolean)" class="member-name-link">setTopLimitSwitch</a><wbr>(boolean&nbsp;topLimit)</code></div>
@@ -301,7 +312,8 @@ loadScripts(document, 'script');</script>
 <section class="detail" id="simulationPeriodic()">
 <h3>simulationPeriodic</h3>
 <div class="member-signature"><span class="modifiers">public</span>&nbsp;<span class="return-type">void</span>&nbsp;<span class="element-name">simulationPeriodic</span>()</div>
-<div class="block">Ran periodically in simulation. Controls the arm simulation.</div>
+<div class="block">Ran periodically in simulation.
+ Controls the arm simulation.</div>
 </section>
 </li>
 <li>
@@ -331,23 +343,25 @@ loadScripts(document, 'script');</script>
 <section class="detail" id="addAbsoluteEncoderValue(double)">
 <h3>addAbsoluteEncoderValue</h3>
 <div class="member-signature"><span class="modifiers">public</span>&nbsp;<span class="return-type">void</span>&nbsp;<span class="element-name">addAbsoluteEncoderValue</span><wbr><span class="parameters">(double&nbsp;absEncoderDegrees)</span></div>
-<div class="block">Adds an absolute encoder to sync to on init. This is not used for actual control but
- recommended to keep arm position on boot. Can be called in init.</div>
+<div class="block">Adds an absolute encoder to sync to on init. This is not used for actual control
+ but recommended to keep arm position on boot. Can be called in init.
+ Value must be in 0-360.</div>
 </section>
 </li>
 <li>
 <section class="detail" id="setSyncAbsEncoderInit(boolean)">
 <h3>setSyncAbsEncoderInit</h3>
 <div class="member-signature"><span class="modifiers">public</span>&nbsp;<span class="return-type">void</span>&nbsp;<span class="element-name">setSyncAbsEncoderInit</span><wbr><span class="parameters">(boolean&nbsp;syncAbsEncoderInit)</span></div>
-<div class="block">Determines whether to sync the absolute encoder in the <a href="ManipArm.html" title="class in maniplib"><code>ManipArm</code></a> class or not. This is
- enabled by default.</div>
+<div class="block">Determines whether to sync the absolute encoder in the
+ <a href="ManipArm.html" title="class in maniplib"><code>ManipArm</code></a> class or not. This is enabled by default.</div>
 </section>
 </li>
 <li>
 <section class="detail" id="synchronizeAbsoluteEncoder()">
 <h3>synchronizeAbsoluteEncoder</h3>
 <div class="member-signature"><span class="modifiers">public</span>&nbsp;<span class="return-type">void</span>&nbsp;<span class="element-name">synchronizeAbsoluteEncoder</span>()</div>
-<div class="block">Seeds inbuilt encoder with absolute encoder value. Syncs on init by default.</div>
+<div class="block">Seeds inbuilt encoder with absolute encoder value.
+ Syncs on init by default.</div>
 </section>
 </li>
 <li>
@@ -398,14 +412,32 @@ loadScripts(document, 'script');</script>
 <section class="detail" id="runArmSpeed(double)">
 <h3>runArmSpeed</h3>
 <div class="member-signature"><span class="modifiers">public</span>&nbsp;<span class="return-type">void</span>&nbsp;<span class="element-name">runArmSpeed</span><wbr><span class="parameters">(double&nbsp;speed)</span></div>
-<div class="block">Basic method to run the arm at commanded speed. This does not stop!!</div>
+<div class="block">Basic method to run the arm at commanded speed.
+ This does not stop!!</div>
 </section>
 </li>
 <li>
 <section class="detail" id="runArmVoltage(edu.wpi.first.units.measure.Voltage)">
 <h3>runArmVoltage</h3>
 <div class="member-signature"><span class="modifiers">public</span>&nbsp;<span class="return-type">void</span>&nbsp;<span class="element-name">runArmVoltage</span><wbr><span class="parameters">(<a href="https://github.wpilib.org/allwpilib/docs/release/java/edu/wpi/first/units/measure/Voltage.html" title="class or interface in edu.wpi.first.units.measure" class="external-link">Voltage</a>&nbsp;volts)</span></div>
-<div class="block">Basic method to run the arm at commanded voltage. This does not stop!!</div>
+<div class="block">Basic method to run the arm at commanded voltage.
+ This does not stop!!</div>
+</section>
+</li>
+<li>
+<section class="detail" id="runkG()">
+<h3>runkG</h3>
+<div class="member-signature"><span class="modifiers">public</span>&nbsp;<span class="return-type">void</span>&nbsp;<span class="element-name">runkG</span>()</div>
+<div class="block">Powers the motor with the kG feedforward value.
+ "Voltage required to counteract gravity".</div>
+</section>
+</li>
+<li>
+<section class="detail" id="runkGCommand()">
+<h3>runkGCommand</h3>
+<div class="member-signature"><span class="modifiers">public</span>&nbsp;<span class="return-type"><a href="https://github.wpilib.org/allwpilib/docs/release/java/edu/wpi/first/wpilibj2/command/Command.html" title="class or interface in edu.wpi.first.wpilibj2.command" class="external-link">Command</a></span>&nbsp;<span class="element-name">runkGCommand</span>()</div>
+<div class="block">Powers the motor with the kG feedforward value as a command.
+ "Voltage required to counteract gravity".</div>
 </section>
 </li>
 <li>
@@ -441,14 +473,16 @@ loadScripts(document, 'script');</script>
 <section class="detail" id="runArmSpeedCommand(double)">
 <h3>runArmSpeedCommand</h3>
 <div class="member-signature"><span class="modifiers">public</span>&nbsp;<span class="return-type"><a href="https://github.wpilib.org/allwpilib/docs/release/java/edu/wpi/first/wpilibj2/command/Command.html" title="class or interface in edu.wpi.first.wpilibj2.command" class="external-link">Command</a></span>&nbsp;<span class="element-name">runArmSpeedCommand</span><wbr><span class="parameters">(double&nbsp;speed)</span></div>
-<div class="block">Runs runArmSpeed as a <a href="https://github.wpilib.org/allwpilib/docs/release/java/edu/wpi/first/wpilibj2/command/Command.html" title="class or interface in edu.wpi.first.wpilibj2.command" class="external-link"><code>Command</code></a>. This stops after command is finished.</div>
+<div class="block">Runs runArmSpeed as a <a href="https://github.wpilib.org/allwpilib/docs/release/java/edu/wpi/first/wpilibj2/command/Command.html" title="class or interface in edu.wpi.first.wpilibj2.command" class="external-link"><code>Command</code></a>.
+ This stops after command is finished.</div>
 </section>
 </li>
 <li>
 <section class="detail" id="runArmVoltageCommand(edu.wpi.first.units.measure.Voltage)">
 <h3>runArmVoltageCommand</h3>
 <div class="member-signature"><span class="modifiers">public</span>&nbsp;<span class="return-type"><a href="https://github.wpilib.org/allwpilib/docs/release/java/edu/wpi/first/wpilibj2/command/Command.html" title="class or interface in edu.wpi.first.wpilibj2.command" class="external-link">Command</a></span>&nbsp;<span class="element-name">runArmVoltageCommand</span><wbr><span class="parameters">(<a href="https://github.wpilib.org/allwpilib/docs/release/java/edu/wpi/first/units/measure/Voltage.html" title="class or interface in edu.wpi.first.units.measure" class="external-link">Voltage</a>&nbsp;volts)</span></div>
-<div class="block">Runs runArmVoltage as a <a href="https://github.wpilib.org/allwpilib/docs/release/java/edu/wpi/first/wpilibj2/command/Command.html" title="class or interface in edu.wpi.first.wpilibj2.command" class="external-link"><code>Command</code></a>. This stops after command is finished.</div>
+<div class="block">Runs runArmVoltage as a <a href="https://github.wpilib.org/allwpilib/docs/release/java/edu/wpi/first/wpilibj2/command/Command.html" title="class or interface in edu.wpi.first.wpilibj2.command" class="external-link"><code>Command</code></a>.
+ This stops after command is finished.</div>
 </section>
 </li>
 <li>
@@ -469,9 +503,9 @@ loadScripts(document, 'script');</script>
 <section class="detail" id="autoStowWithOverride(double)">
 <h3>autoStowWithOverride</h3>
 <div class="member-signature"><span class="modifiers">public</span>&nbsp;<span class="return-type"><a href="https://github.wpilib.org/allwpilib/docs/release/java/edu/wpi/first/wpilibj2/command/Command.html" title="class or interface in edu.wpi.first.wpilibj2.command" class="external-link">Command</a></span>&nbsp;<span class="element-name">autoStowWithOverride</span><wbr><span class="parameters">(double&nbsp;stowAngle)</span></div>
-<div class="block">A command to be used as a default command to stow the arm. Use toggleAutoStow() to toggle it on
- and off. It's good for if you want it to stow but want safety or to be able to control
- manually.</div>
+<div class="block">A command to be used as a default command to stow the arm.
+ Use toggleAutoStow() to toggle it on and off.
+ It's good for if you want it to stow but want safety or to be able to control manually.</div>
 </section>
 </li>
 <li>
