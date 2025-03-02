@@ -123,7 +123,7 @@ loadScripts(document, 'script');</script>
 <div class="table-header col-second">Method</div>
 <div class="table-header col-last">Description</div>
 <div class="col-first even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code>void</code></div>
-<div class="col-second even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#addAbsoluteEncoderValue(double)" class="member-name-link">addAbsoluteEncoderValue</a><wbr>(double&nbsp;absEncoderDegrees)</code></div>
+<div class="col-second even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#addAbsoluteEncoderValue(double)" class="member-name-link">addAbsoluteEncoderValue</a><wbr>(double&nbsp;absEncoderRotations)</code></div>
 <div class="col-last even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4">
 <div class="block">Adds an absolute encoder to sync to on init.</div>
 </div>
@@ -342,10 +342,10 @@ loadScripts(document, 'script');</script>
 <li>
 <section class="detail" id="addAbsoluteEncoderValue(double)">
 <h3>addAbsoluteEncoderValue</h3>
-<div class="member-signature"><span class="modifiers">public</span>&nbsp;<span class="return-type">void</span>&nbsp;<span class="element-name">addAbsoluteEncoderValue</span><wbr><span class="parameters">(double&nbsp;absEncoderDegrees)</span></div>
+<div class="member-signature"><span class="modifiers">public</span>&nbsp;<span class="return-type">void</span>&nbsp;<span class="element-name">addAbsoluteEncoderValue</span><wbr><span class="parameters">(double&nbsp;absEncoderRotations)</span></div>
 <div class="block">Adds an absolute encoder to sync to on init. This is not used for actual control
  but recommended to keep arm position on boot. Can be called in init.
- Value must be in 0-360.</div>
+ Value must be in rotations 0-1.</div>
 </section>
 </li>
 <li>
